@@ -88,13 +88,13 @@ class EnclosureControlSkill(OVOSSkill):
                    (self.enclosure.eyes_look, "u"),
                    (self.enclosure.eyes_look, "l"),
                    (self.enclosure.eyes_look, "r"),
-                   (self.enclosure.eyes_color, (255, 0, 0)),
-                   (self.enclosure.eyes_color, (255, 0, 255)),
-                   (self.enclosure.eyes_color, (255, 255, 255)),
-                   (self.enclosure.eyes_color, (0, 0, 255)),
-                   (self.enclosure.eyes_color, (0, 255, 0)),
-                   (self.enclosure.eyes_color, (255, 255, 0)),
-                   (self.enclosure.eyes_color, (0, 255, 255)),
+                   (self.enclosure.eyes_color, self.set_eye_color(sRGBAColor(255, 0, 0))),
+                   (self.enclosure.eyes_color, self.set_eye_color(sRGBAColor(255, 0, 255))),
+                   (self.enclosure.eyes_color, self.set_eye_color(sRGBAColor(255, 255, 255))),
+                   (self.enclosure.eyes_color, self.set_eye_color(sRGBAColor(0, 0, 255))),
+                   (self.enclosure.eyes_color, self.set_eye_color(sRGBAColor(0, 255, 0))),
+                   (self.enclosure.eyes_color, self.set_eye_color(sRGBAColor(255, 255, 0))),
+                   (self.enclosure.eyes_color, self.set_eye_color(sRGBAColor(0, 255, 255))),
                    (self.enclosure.eyes_spin, None),
                    (self.enclosure.eyes_narrow, None),
                    (self.enclosure.eyes_on, None),
@@ -240,7 +240,7 @@ class EnclosureControlSkill(OVOSSkill):
         self.thread = None
         self.enclosure.activate_mouth_events()
         self.enclosure.mouth_reset()
-        self.enclosure.eyes_reset()
+        # self.handle_default_eyes()
 
     def play_animation(self, animation=None):
         animation = animation or self.up_down_animation
@@ -358,7 +358,7 @@ class EnclosureControlSkill(OVOSSkill):
         self.speak("artificial intelligence performing artificial "
                    "stupidity, you don't see this every day")
         self.play_animation(self.crazy_eyes_animation)
-        self.enclosure.eyes_reset()
+        self.handle_default_eyes()
 
     #####################################################################
     # Color interactions
@@ -549,8 +549,6 @@ class EnclosureControlSkill(OVOSSkill):
                 self._load_defaults()
             if settings.get("default_eye_position"):
                 LOG.info("Not implemented yet")
-            # else:
-                self.enclosure.eyes_reset()
             
         else:
             LOG.info("No default eye color found, creating them")
