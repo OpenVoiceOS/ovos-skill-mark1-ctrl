@@ -41,7 +41,7 @@ def verify_mark_1():
     if i2c.exists():
         with open(i2c, 'r') as f:
             device = f.read().rstrip()
-            if not device == "MARK1":
+            if device != "MARK1":
                 LOG.error = f"ovos-i2cdetect detected device {device}."
             else:
                 return True
@@ -63,7 +63,8 @@ class EnclosureControlSkill(OVOSSkill):
         self.playing = False
         self.animations = []
         if not self.settings.get("defaults"):
-            self._create_defaults()
+            LOG.info("No default settings, creating them now")
+            self._create_settings()
         self._load_defaults()
         # callback_time = now_local() + datetime.timedelta(seconds=60)
         # self.schedule_repeating_event(self.update_dt, callback_time, 10)
@@ -166,16 +167,27 @@ class EnclosureControlSkill(OVOSSkill):
 #             self.datetime_api = None
             
     def _load_defaults(self):
-        defaults = self.settings.get("defaults").get("default_eye_color")
-        (r, g, b) = defaults.get("rgb")
-        self.default_eye_color = sRGBAColor(r, g, b)
-        self.set_eye_color(self.default_eye_color)
-        # TODO: Eye position?
-        # TODO: Mouth position?
-        self.enclosure.mouth_reset()
-        
-    def _create_defaults(self):
-        LOG.info("creating defaults")
+        try:
+            defaults = self.settings.get("defaults", {}).get("default_eye_color", {})
+            rgb = defaults.get("rgb")
+            if rgb and len(rgb) == 3:
+                (r, g, b) = rgb
+                self.set_eye_color(sRGBAColor(r, g, b))
+            else:
+                LOG.warning("Invalid default eye color, recreating defaults")
+                self._create_settings()
+                self._load_defaults()
+            # TODO: Eye position?
+            # TODO: Mouth position?
+            self.enclosure.mouth_reset()
+        except Exception as e:
+            LOG.error(f"error loading defaults {e}")
+            self._create_settings()
+            self._load_defaults()
+                      
+            
+    def _create_settings(self):
+        LOG.info("creating settings")
         # Using "mycroft blue" as a default color
         # TODO: figure out naming conventions
         
@@ -185,7 +197,9 @@ class EnclosureControlSkill(OVOSSkill):
         color = sRGBAColor.from_hex_str("#22A7F0", name="Mycroft blue", description="blue")
         
         self.settings["defaults"] = {"default_eye_color": {"rgb": [color.r, color.g, color.b],
-                                     "name": color.name}}        
+                                     "name": color.name}}
+        self.settings["current_eye_color"] = {"rgb": [color.r, color.g, color.b],
+                                              "name": color.name}
         
     # def update_dt(self):
     #     """
@@ -203,7 +217,7 @@ class EnclosureControlSkill(OVOSSkill):
                 
     def run(self):
         """
-        animation thread while performing speedtest
+        animation thread
 
         """
 
@@ -356,20 +370,23 @@ class EnclosureControlSkill(OVOSSkill):
             if color_rgb is not None:
                 (r, g, b) = (color_rgb.r, color_rgb.g, color_rgb.b)
                 name = color_rgb.name
+            try:
+                self.enclosure.eyes_color(r, g, b)
+                if speak:
+                    self.speak_dialog('set.color.success')
+                # Update saved color
+                if "current_eye_color" not in self.settings:
+                    self.settings["current_eye_color"] = {}
+                self.settings["current_eye_color"] = {
+                    "rgb": [r, g, b],
+                    "name": name}
+                
+            except Exception:
+                LOG.debug('Bad color code: ' + str(color))
+                if speak:
+                    self.speak_dialog('error.set.color')
         else:
-            return  # no color provided!
-
-        try:
-            self.enclosure.eyes_color(r, g, b)
-            if speak:
-                self.speak_dialog('set.color.success')
-            # Update saved color
-            self.settings['current_eye_color']["rgb"] = [r, g, b]
-            self.settings['current_eye_color']["name"] = name
-        except Exception:
-            self.log.debug('Bad color code: ' + str(color))
-            if speak:
-                self.speak_dialog('error.set.color')
+            return
 
     @intent_handler('custom.eye.color.intent')
     def handle_custom_eye_color(self, message):
@@ -434,12 +451,25 @@ class EnclosureControlSkill(OVOSSkill):
                 color_rgb = self._parse_to_rgb(match)
                 if color_rgb is not None:
                     (r, g, b) = color_rgb.r, color_rgb.g, color_rgb.b
-                    self.settings["defaults"]["default_eye_color"] = [r, g, b]
-                    if self.settings.get("current_eye_color") != self.settings["defaults"]["default_eye_color"]:
+                    if "defaults" not in self.settings:
+                        self.settings["defaults"] = {}
+                    if "default_eye_color" not in self.settings["defaults"]:
+                        self.settings["defaults"]["default_eye_color"] = {}
+                    # Save the default settings
+                    self.settings["defaults"]["default_eye_color"] = {
+                        "rgb": [r, g, b],
+                        "name": color_rgb.name}
+                    current_rgb = self.settings.get("current_eye_color", {}).get("rgb", [])
+                    default_rgb = [r, g, b]
+                    if current_rgb != default_rgb:
                         if self.ask_yesno('set.current.eye.color').lower() == "yes":
-                            LOG.info("said change color")
                             self.set_eye_color(match)
-
+                    else:
+                        self.speak("Default color is set")
+                else:
+                    LOG.error(f"Coluld not parse color {match}")
+            else:
+                self.speak_dialog("color.not.exist")
     @intent_handler('default.eye.color.current.intent')
     def handle_default_eye_color_current(self, message):
         """ Callback to set the default eye color from the current color
@@ -447,7 +477,14 @@ class EnclosureControlSkill(OVOSSkill):
             Args:
                 message (dict): messagebus message from intent parser
         """
-        self.settings["defaults"]["default_eye_color"] = self.settings.get("current_eye_color")
+        current_eye_color = self.settings.get("current_eye_color")
+        if current_eye_color:
+            if "defaults" not in self.settings:
+                self.settings["defaults"] = {}
+            self.settings["defaults"] = current_eye_color
+        else:
+            LOG.error("Could not get a current eye color")
+                
         self.speak("I set the default color")
                             
     def _parse_to_rgb(self, color):
@@ -496,20 +533,28 @@ class EnclosureControlSkill(OVOSSkill):
         if settings:
             # Handle default eyes
             try:
-                (r, g, b) = settings.get("default_eye_color").get("rgb")
-                name = settings.get("default_eye_color").get("name", None)
-                color = sRGBAColor(r, g, b, name=name)
-                self.set_eye_color(color, speak=False)
+                default_eye_color = settings.get("default_eye_color", {})
+                if default_eye_color and "rgb" in default_eye_color:
+                    (r, g, b) = default_eye_color.get("rgb")
+                    name = default_eye_color.get("name", None)
+                    color = sRGBAColor(r, g, b, name=name)
+                    self.set_eye_color(color, speak=False)
             except ValueError:
-                self._create_defaults()
+                LOG.error("Invalid default eye color settings")
+                self._create_settings()
+                self._load_defaults()
+            except Exception as e:
+                LOG.error(f"Could not load default eye color.  {e}")
+                self._create_settings()
                 self._load_defaults()
             if settings.get("default_eye_position"):
                 LOG.info("Not implemented yet")
-            else:
+            # else:
                 self.enclosure.eyes_reset()
             
         else:
-            self._create_defaults()
+            LOG.info("No default eye color found, creating them")
+            self._create_settings()
             self._load_defaults()
         
 
