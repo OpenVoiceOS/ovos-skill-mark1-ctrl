@@ -495,15 +495,14 @@ class EnclosureControlSkill(OVOSSkill):
         settings = self.settings.get("defaults")
         if settings:
             # Handle default eyes
-            if settings.get("default_eye_color"):
-                try:
-                    (r, g, b) = settings.get("rgb")
-                    name = settings.get("name", None)
-                    color = sRGBAColor(r, g, b, name=name)
-                    self.set_eye_color(color, speak=False)
-                except ValueError:
-                    self._create_defaults()
-                    self._load_defaults()
+            try:
+                (r, g, b) = settings.get("default_eye_color").get("rgb")
+                name = settings.get("default_eye_color").get("name", None)
+                color = sRGBAColor(r, g, b, name=name)
+                self.set_eye_color(color, speak=False)
+            except ValueError:
+                self._create_defaults()
+                self._load_defaults()
             if settings.get("default_eye_position"):
                 LOG.info("Not implemented yet")
             else:
