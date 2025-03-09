@@ -142,9 +142,9 @@ class EnclosureControlSkill(OVOSSkill):
             "args": args
         }
 
-#     @staticmethod
-#     def _get_time(often, t):
-#         return often - t % often
+    @staticmethod
+    def _get_time(often, t):
+        return often - t % often
 #         
 #     def _load_skill_apis(self):
 #         """
