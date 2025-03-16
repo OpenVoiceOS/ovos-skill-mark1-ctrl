@@ -1,0 +1,88 @@
+{
+  "right.voc": [
+    "Rechts"
+  ],
+  "left.voc": [
+    "links"
+  ],
+  "reboot.voc": [
+    "(Neustart|neu starten|booten)"
+  ],
+  "mouth.voc": [
+    "Mund"
+  ],
+  "animation.voc": [
+    "Animationen",
+    "Animation"
+  ],
+  "unmute.voc": [
+    "Stummschaltung aufheben",
+    "Ton an",
+    "Ton aktivieren"
+  ],
+  "eyes.voc": [
+    "Auge",
+    "Augen"
+  ],
+  "listen.voc": [
+    "Hören",
+    "zuhören"
+  ],
+  "look.voc": [
+    "blicke",
+    "richte deine Augen"
+  ],
+  "blink.voc": [
+    "blinken"
+  ],
+  "crazy.voc": [
+    "verrückt"
+  ],
+  "think.voc": [
+    "Denken",
+    "Nachdenken"
+  ],
+  "enclosure.voc": [
+    "Gehäuse",
+    "dein Körper",
+    "Mark 1",
+    "mark (eins|one)"
+  ],
+  "down.voc": [
+    "runter"
+  ],
+  "reset.voc": [
+    "zurücksetzen",
+    "zurück zum Normalzustand",
+    "zurück zur (Standardeinstellung|Grundeinstellung|Werkseinstellung)",
+    "zurück zu den (Standardeinstellungen|Grundeinstellungen)"
+  ],
+  "narrow.voc": [
+    "eng"
+  ],
+  "spin.voc": [
+    "rolle",
+    "verdrehe",
+    "verdrehen"
+  ],
+  "perform.voc": [
+    "durchführen"
+  ],
+  "system.voc": [
+    "System",
+    "Betriebssystem"
+  ],
+  "mute.voc": [
+    "stumm",
+    "Ton aus",
+    "Ton (deaktivieren|abstellen)",
+    "Tonabschaltung"
+  ],
+  "up.voc": [
+    "hoch"
+  ],
+  "smile.voc": [
+    "lächeln",
+    "Lächeln"
+  ]
+}
