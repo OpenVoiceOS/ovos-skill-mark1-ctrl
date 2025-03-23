@@ -1,13 +1,12 @@
-réduit (the|your) yeux sur {brightness} (percent|)
-réduit sur {brightness} (percent|)
-baisse la (brightness|illumination) de tes yeux sur {brightness} (percent|)
-règle (the|) (brightness|illumination) (down|up) sur {brightness} (percent|)
-règle (down|up) (the|) (brightness|illumination) sur {brightness} (percent|)
-Augmente (a bit|) sur {brightness} (percent|)
-(change|set|switch) sur {brightness} (percent|) (eye|) (brightness|illumination)
-(change|set|switch) (the|your) (eye|) (brightness|illumination) (level|) sur {brightness} (percent|)
 (change|set|switch) (the|your) (eye|) (brightness|illumination) (level|)
+(change|set|switch) (the|your) (eye|) (brightness|illumination) (level|) sur {brightness} (percent|)
+(change|set|switch) sur {brightness} (percent|) (eye|) (brightness|illumination)
+Augmente (a bit|) sur {brightness} (percent|)
 C'est (too|) (bright|dim)
-C'est (too|) (bright|dim)
-éclaire le plus
+baisse la (brightness|illumination) de tes yeux sur {brightness} (percent|)
+règle (down|up) (the|) (brightness|illumination) sur {brightness} (percent|)
+règle (the|) (brightness|illumination) (down|up) sur {brightness} (percent|)
+réduit (the|your) yeux sur {brightness} (percent|)
 réduit le un peu
+réduit sur {brightness} (percent|)
+éclaire le plus
