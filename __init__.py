@@ -79,30 +79,30 @@ class EnclosureControlSkill(OVOSSkill):
                                    no_network_fallback=True,
                                    no_gui_fallback=True)
     
-    @property
-    def crazy_eyes_animation(self):
-        choices = [(self.enclosure.eyes_look, "d"),
-                   (self.enclosure.eyes_look, "u"),
-                   (self.enclosure.eyes_look, "l"),
-                   (self.enclosure.eyes_look, "r"),
-                   (self.set_eye_color, sRGBAColor(255, 0, 0)),
-                   (self.set_eye_color, sRGBAColor(255, 0, 255)),
-                   (self.set_eye_color, sRGBAColor(255, 255, 255)),
-                   (self.set_eye_color, sRGBAColor(0, 0, 255)),
-                   (self.set_eye_color, sRGBAColor(0, 255, 0)),
-                   (self.set_eye_color, sRGBAColor(255, 255, 0)),
-                   (self.set_eye_color, sRGBAColor(0, 255, 255)),
-                   (self.enclosure.eyes_spin, None),
-                   (self.enclosure.eyes_narrow, None),
-                   (self.enclosure.eyes_on, None),
-                   (self.enclosure.eyes_off, None),
-                   (self.enclosure.eyes_blink, "b")]
-
-        anim = []
-        for i in range(0, 10):
-            frame = random.choice(choices)
-            anim.append(self.animate(i, 1, frame[0], frame[1]))
-        return anim
+    # @property
+    # def crazy_eyes_animation(self):
+    #     choices = [(self.enclosure.eyes_look, "d"),
+    #                (self.enclosure.eyes_look, "u"),
+    #                (self.enclosure.eyes_look, "l"),
+    #                (self.enclosure.eyes_look, "r"),
+    #                (self.set_eye_color, sRGBAColor(255, 0, 0)),
+    #                (self.set_eye_color, sRGBAColor(255, 0, 255)),
+    #                (self.set_eye_color, sRGBAColor(255, 255, 255)),
+    #                (self.set_eye_color, sRGBAColor(0, 0, 255)),
+    #                (self.set_eye_color, sRGBAColor(0, 255, 0)),
+    #                (self.set_eye_color, sRGBAColor(255, 255, 0)),
+    #                (self.set_eye_color, sRGBAColor(0, 255, 255)),
+    #                (self.enclosure.eyes_spin, None),
+    #                (self.enclosure.eyes_narrow, None),
+    #                (self.enclosure.eyes_on, None),
+    #                (self.enclosure.eyes_off, None),
+    #                (self.enclosure.eyes_blink, "b")]
+    # 
+    #     anim = []
+    #     for i in range(0, 10):
+    #         frame = random.choice(choices)
+    #         anim.append(self.animate(i, 1, frame[0], frame[1]))
+    #     return anim
 
     @property
     def up_down_animation(self):
@@ -201,7 +201,6 @@ class EnclosureControlSkill(OVOSSkill):
         self.thread = None  # Thread ends naturally
         self.enclosure.activate_mouth_events()
         self.enclosure.mouth_reset()
-        # self.handle_default_eyes()
         # Restore initial current_eye_color if different from default color
         if current_eye_color["rgb"] != self.settings.get("defaults", {}).get("default_eye_color")["rgb"]:
             (r, g, b) = current_eye_color["rgb"]
@@ -322,13 +321,13 @@ class EnclosureControlSkill(OVOSSkill):
         self.speak("i love thinking")
         self.enclosure.mouth_think()
 
-    @intent_handler(IntentBuilder("EnclosureCrazyEyes")
-                    .require("eyes").optionally("animation").require("crazy")
-                    .optionally("enclosure"))
-    def handle_enclosure_crazy_eyes(self, message):
-        self.speak("artificial intelligence performing artificial "
-                   "stupidity, you don't see this every day")
-        self.play_animation(self.crazy_eyes_animation)
+    # @intent_handler(IntentBuilder("EnclosureCrazyEyes")
+    #                 .require("eyes").optionally("animation").require("crazy")
+    #                 .optionally("enclosure"))
+    # def handle_enclosure_crazy_eyes(self, message):
+    #     self.speak("artificial intelligence performing artificial "
+    #                "stupidity, you don't see this every day")
+    #     self.play_animation(self.crazy_eyes_animation)
 
     #####################################################################
     # Color interactions
