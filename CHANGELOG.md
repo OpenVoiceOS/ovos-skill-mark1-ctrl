@@ -1,11 +1,14 @@
 # Changelog
 
-## [0.0.1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.0.1) (2025-03-15)
+## [0.0.1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.0.1) (2025-12-19)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.0.1...0.0.1)
 
 **Merged pull requests:**
 
+- Configure Renovate [\#9](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/9) ([renovate[bot]](https://github.com/apps/renovate))
+- updating German translation [\#8](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/8) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- updating German translation [\#7](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/7) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 - Add Catalan strings [\#6](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/6) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 - Add Catalan strings [\#5](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/5) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 
