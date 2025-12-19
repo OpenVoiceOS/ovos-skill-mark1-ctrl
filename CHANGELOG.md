@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Update dependency python to 3.14 [\#10](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/10) ([renovate[bot]](https://github.com/apps/renovate))
 - Configure Renovate [\#9](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/9) ([renovate[bot]](https://github.com/apps/renovate))
 - updating German translation [\#8](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/8) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 - updating German translation [\#7](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/7) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
