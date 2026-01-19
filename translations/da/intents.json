@@ -1,0 +1,29 @@
+{
+  "eye.color.intent": [
+    "(ændre|indstil) (din|dine|) (øjne|øjne) (farve|farver|) til {farve}",
+    null,
+    "(ændre|indstil) øje (farve|farver) til noget {color}",
+    "(ændre|indstil) (dine|) øjne til (a|an|) {color} (farve|)",
+    "(ændre|indstil) (øje|øjne) til (a|en) {color} farve",
+    null
+  ],
+  "brightness.intent": [
+    "dæmp (dine) øjne til {brightness} (procent|)",
+    null,
+    "sænk (lysstyrke|belysning) af dine øjne til {brightness} (procent|)",
+    "drej (den|) (lysstyrke|belysning) (ned|op) til {brightness} (procent|)",
+    "skru (ned|op) (den|) (lysstyrke|belysning) til {brightness} (procent|)",
+    "lysne op (en smule|) til {brightness} (procent|)",
+    "(skift|indstil|skift) til {brightness} (procent|) (øje|) (lysstyrke|belysning)",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "custom.eye.color.intent": [
+    null,
+    null
+  ]
+}
