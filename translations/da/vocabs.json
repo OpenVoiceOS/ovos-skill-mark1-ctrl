@@ -1,0 +1,88 @@
+{
+  "right.voc": [
+    "højre"
+  ],
+  "left.voc": [
+    "venstre"
+  ],
+  "reboot.voc": [
+    "genstart"
+  ],
+  "mouth.voc": [
+    "mund"
+  ],
+  "animation.voc": [
+    "animationer",
+    "animation"
+  ],
+  "unmute.voc": [
+    "slå lyden til",
+    "lyd på",
+    "lyd aktiveret"
+  ],
+  "eyes.voc": [
+    "øje",
+    "øjne"
+  ],
+  "listen.voc": [
+    "lytte",
+    "lytter"
+  ],
+  "look.voc": [
+    "se",
+    "pege dine øjne"
+  ],
+  "blink.voc": [
+    "blinke"
+  ],
+  "crazy.voc": [
+    "skør"
+  ],
+  "think.voc": [
+    "tænker",
+    "tænke"
+  ],
+  "enclosure.voc": [
+    "indhegning",
+    "din krop",
+    null,
+    null
+  ],
+  "down.voc": [
+    "ned"
+  ],
+  "reset.voc": [
+    "nulstilles",
+    "tilbage til normalen",
+    "tilbage til standard",
+    "tilbage til standardindstillingerne"
+  ],
+  "narrow.voc": [
+    "smal"
+  ],
+  "spin.voc": [
+    "spin",
+    "rotere",
+    "vride"
+  ],
+  "perform.voc": [
+    "udføre"
+  ],
+  "system.voc": [
+    "system",
+    "operativsystem"
+  ],
+  "mute.voc": [
+    "stum",
+    "lyden slukket",
+    "lyd deaktiveret",
+    "lydafbrydelse"
+  ],
+  "up.voc": [
+    "op"
+  ],
+  "smile.voc": [
+    "smil",
+    "smilende"
+  ]
+}
