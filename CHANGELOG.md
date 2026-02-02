@@ -9,6 +9,7 @@
 - da-dk/translate [\#21](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/21) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 - gl-es/translate [\#20](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/20) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 - es-es/translate [\#19](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/19) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- Update actions/setup-python action to v6 [\#15](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/15) ([renovate[bot]](https://github.com/apps/renovate))
 - Update actions/checkout action to v6 [\#14](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/14) ([renovate[bot]](https://github.com/apps/renovate))
 - Update dependency python to 3.14 [\#10](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/10) ([renovate[bot]](https://github.com/apps/renovate))
 - Configure Renovate [\#9](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/9) ([renovate[bot]](https://github.com/apps/renovate))
