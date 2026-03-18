@@ -16,9 +16,9 @@
     "animations"
   ],
   "unmute.voc": [
-    "rétablis le son",
-    "active le son",
-    "remets le son"
+    "rétablis le son du mark one",
+    "active le son du mark one",
+    "remets le son du mark one"
   ],
   "eyes.voc": [
     "œil",
@@ -29,8 +29,8 @@
     "écouter"
   ],
   "look.voc": [
-    "regarde",
-    "tourne les yeux"
+    "tourne les yeux",
+    "oriente les yeux"
   ],
   "blink.voc": [
     "cligne",
@@ -68,16 +68,16 @@
     "pivote"
   ],
   "perform.voc": [
-    "fais"
+    "exécute"
   ],
   "system.voc": [
     "système",
     "système d'exploitation"
   ],
   "mute.voc": [
-    "coupe le son",
-    "désactive le son",
-    "muet"
+    "coupe le son du mark one",
+    "désactive le son du mark one",
+    "mets le mark one en sourdine"
   ],
   "up.voc": [
     "haut"
