@@ -55,5 +55,8 @@
     "get.b.value.dialog": [
         "Presque fini. Quelle valeur pour le bleu ?",
         "On dernier nombre pour le bleu de 0 \u00e0 255"
+    ],
+    "set.default.eye.color.dialog": [
+        "Voulez-vous définir cette couleur comme couleur des yeux par défaut ?"
     ]
 }

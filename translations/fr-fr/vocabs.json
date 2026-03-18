@@ -1,0 +1,89 @@
+{
+  "right.voc": [
+    "droite"
+  ],
+  "left.voc": [
+    "gauche"
+  ],
+  "reboot.voc": [
+    "redémarre"
+  ],
+  "mouth.voc": [
+    "bouche"
+  ],
+  "animation.voc": [
+    "animation",
+    "animations"
+  ],
+  "unmute.voc": [
+    "rétablis le son",
+    "active le son",
+    "remets le son"
+  ],
+  "eyes.voc": [
+    "œil",
+    "yeux"
+  ],
+  "listen.voc": [
+    "écoute",
+    "écouter"
+  ],
+  "look.voc": [
+    "regarde",
+    "tourne les yeux"
+  ],
+  "blink.voc": [
+    "cligne",
+    "cligner"
+  ],
+  "crazy.voc": [
+    "fou",
+    "folle"
+  ],
+  "think.voc": [
+    "réfléchis",
+    "réfléchir"
+  ],
+  "enclosure.voc": [
+    "boîtier",
+    "ton corps",
+    "mark 1",
+    "mark one"
+  ],
+  "down.voc": [
+    "bas"
+  ],
+  "reset.voc": [
+    "réinitialise",
+    "revient à la normale",
+    "remets par défaut",
+    "revient par défaut"
+  ],
+  "narrow.voc": [
+    "plisse"
+  ],
+  "spin.voc": [
+    "tourne",
+    "fais tourner",
+    "pivote"
+  ],
+  "perform.voc": [
+    "fais"
+  ],
+  "system.voc": [
+    "système",
+    "système d'exploitation"
+  ],
+  "mute.voc": [
+    "coupe le son",
+    "désactive le son",
+    "muet"
+  ],
+  "up.voc": [
+    "haut"
+  ],
+  "smile.voc": [
+    "souris",
+    "sourire"
+  ]
+}
