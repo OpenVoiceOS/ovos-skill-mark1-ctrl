@@ -1,11 +1,13 @@
 # Changelog
 
-## [0.0.1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.0.1) (2026-02-02)
+## [0.0.1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.0.1) (2026-03-24)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.0.1...0.0.1)
 
 **Merged pull requests:**
 
+- fix: rename bare lang code locale directories [\#23](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/23) ([ovos-localize[bot]](https://github.com/apps/ovos-localize))
+- Complete French Mark 1 control locale [\#22](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/22) ([goldyfruit](https://github.com/goldyfruit))
 - da-dk/translate [\#21](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/21) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 - gl-es/translate [\#20](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/20) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 - es-es/translate [\#19](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/19) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
