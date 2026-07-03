@@ -14,3 +14,4 @@ jobs:
       install_extras: 'test'
       require_adapt: true
       test_path: 'test/end2end/'
+      require_padatious: true

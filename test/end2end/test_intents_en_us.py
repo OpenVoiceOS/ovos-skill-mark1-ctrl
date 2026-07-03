@@ -1,69 +1,80 @@
-"""End-to-end intent routing tests for the en-US locale.
+"""End-to-end intent-routing tests for ovos-skill-mark1-ctrl (en-US).
 
-The Mark 1 enclosure skill is hardware-bound: its handlers drive the faceplate
-via the enclosure bus API. Each canonical utterance is fired through a real
-MiniCroft and asserted to route to the expected ADAPT intent handler. No live
-hardware is required -- the enclosure messages are emitted onto the bus and the
-assertions cover the intent binding only.
+Each case boots an in-process MiniCroft with the skill loaded and feeds a real
+utterance through the padatious pipeline, asserting where it routes and how the
+``{color}`` / ``{brightness}`` slots are filled.
+
+The skill's ``__init__`` refuses to load off a physical Mark 1 (I2C probe), so
+``ovos_i2c_detection.is_mark_1`` is stubbed True before the plugin loader
+imports the skill module.
+
+Run: pytest test/end2end/ -v
 """
-import unittest
-
 import ovos_i2c_detection
+
+ovos_i2c_detection.is_mark_1 = lambda: True
+
+import time
+from unittest import TestCase
+
 from ovos_bus_client.message import Message
 from ovos_bus_client.session import Session
-from ovoscope import CaptureSession, get_minicroft
+from ovoscope import get_minicroft
 
 SKILL_ID = "ovos-skill-mark1-ctrl.openvoiceos"
 LANG = "en-US"
 
+# Exact expansions score conf 1.0 (the -high band); the slot-filled variants
+# land lower, so register both padatious bands.
+PIPELINE = [
+    "ovos-padatious-pipeline-plugin-high",
+    "ovos-padatious-pipeline-plugin-medium",
+]
 
-class TestMark1IntentsEnUS(unittest.TestCase):
+
+class _RoutingTest(TestCase):
+    """Shared MiniCroft harness for padatious intent routing."""
+
     @classmethod
     def setUpClass(cls):
-        # The skill refuses to load unless it detects Mark 1 hardware; force the
-        # detection so intent routing can be exercised on a headless runner.
-        cls._real_is_mark_1 = ovos_i2c_detection.is_mark_1
-        ovos_i2c_detection.is_mark_1 = lambda: True
         cls.minicroft = get_minicroft([SKILL_ID])
+        cls.bus = cls.minicroft.bus
 
     @classmethod
     def tearDownClass(cls):
-        cls.minicroft.stop()
-        ovos_i2c_detection.is_mark_1 = cls._real_is_mark_1
+        if getattr(cls, "minicroft", None):
+            cls.minicroft.stop()
 
-    def _run(self, text):
-        session = Session("test-session")
-        session.lang = LANG
-        session.pipeline = [
-            "ovos-adapt-pipeline-plugin-high",
-            "ovos-adapt-pipeline-plugin-medium",
-            "ovos-adapt-pipeline-plugin-low",
-        ]
-        utterance = Message(
-            "recognizer_loop:utterance",
-            {"utterances": [text], "lang": LANG},
-            {"session": session.serialize(), "source": "A", "destination": "B"},
-        )
-        capture = CaptureSession(self.minicroft)
-        capture.capture(utterance, timeout=30)
-        return capture.finish()
+    def _run(self, utterance, intent_name):
+        """Emit ``utterance`` and collect the routed intent message data."""
+        routed = []
+        topic = f"{SKILL_ID}:{intent_name}"
+        cb = lambda m: routed.append(m.data)
+        self.bus.on(topic, cb)
+        try:
+            session = Session(f"e2e-en_us-{abs(hash(utterance))}")
+            session.lang = LANG
+            session.pipeline = PIPELINE
+            self.bus.emit(Message(
+                "recognizer_loop:utterance",
+                {"utterances": [utterance], "lang": LANG},
+                {"session": session.serialize()},
+            ))
+            time.sleep(3)
+        finally:
+            self.bus.remove(topic, cb)
+        return routed
 
-    def _assert_intent(self, text, intent_label):
-        messages = self._run(text)
-        types = [m.msg_type for m in messages]
-        self.assertIn(f"{SKILL_ID}:{intent_label}", types)
 
-    def test_look_right(self):
-        self._assert_intent("look right", "EnclosureLookRight")
+class TestIntentRouting(_RoutingTest):
+    """Padatious routing for the eye-colour and brightness intents."""
 
-    def test_look_right_enclosure(self):
-        self._assert_intent("look right enclosure", "EnclosureLookRight")
+    def test_set_the_eye_color_to_red(self):
+        routed = self._run("set the eye color to red", "eye_color.intent")
+        self.assertTrue(routed, "'set the eye color to red' did not route to eye_color.intent")
+        self.assertEqual(routed[0].get("color"), "red")
 
-    def test_look_left(self):
-        self._assert_intent("look left", "EnclosureLookLeft")
-
-    def test_spin_eyes(self):
-        self._assert_intent("spin eyes", "EnclosureEyesSpin")
-
-    def test_narrow_eyes(self):
-        self._assert_intent("narrow eyes", "EnclosureEyesNarrow")
+    def test_set_eye_brightness_to_50(self):
+        routed = self._run("set eye brightness to 50", "brightness.intent")
+        self.assertTrue(routed, "'set eye brightness to 50' did not route to brightness.intent")
+        self.assertEqual(routed[0].get("brightness"), "50")

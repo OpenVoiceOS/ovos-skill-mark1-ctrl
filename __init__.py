@@ -301,8 +301,7 @@ class EnclosureControlSkill(OVOSSkill):
             except Exception:
                 return False
 
-        self.speak_dialog('set_custom_color')
-        wait_while_speaking()
+        self.speak_dialog('set_custom_color', wait=True)
         r = self.get_response('get_r_value', validator=is_byte,
                               on_fail="error_rgbvalue", num_retries=2)
         if not r:
@@ -449,10 +448,7 @@ class EnclosureControlSkill(OVOSSkill):
         percent = self.parse_brightness(brightness)
         if percent is None:
             self.speak_dialog('brightness_not_found_final')
-        elif int(percent) is -1:
-            self.handle_auto_brightness(None)
         else:
-            self.auto_brightness = False
             self.set_eye_brightness(self.percent_to_level(percent))
 
     @intent_handler('brightness.intent')
