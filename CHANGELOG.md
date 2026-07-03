@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.3a3](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.0.3a3) (2026-07-03)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.0.3a2...0.0.3a3)
+
+**Merged pull requests:**
+
+- chore: add ovoscope end2end intent-routing tests [\#28](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/28) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.0.3a2](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.0.3a2) (2026-04-04)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.0.1...0.0.3a2)
