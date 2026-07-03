@@ -12,6 +12,7 @@ jobs:
     with:
       python_version: '3.11'
       coverage_source: 'ovos_skill_mark1_ctrl'
-      test_path: 'test/'
+      test_path: 'test/end2end/'
+      test_extras: 'test'
       install_extras: ''
       min_coverage: 0
