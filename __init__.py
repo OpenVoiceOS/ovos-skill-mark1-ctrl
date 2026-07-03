@@ -281,7 +281,7 @@ class EnclosureControlSkill(OVOSSkill):
         try:
             self.enclosure.eyes_color(r, g, b)
             if speak:
-                self.speak_dialog('set.color.success')
+                self.speak_dialog('set_color_success')
             # Update saved color
             self.settings['current_eye_color'] = [r, g, b]
             if make_default:
@@ -289,9 +289,9 @@ class EnclosureControlSkill(OVOSSkill):
         except Exception:
             self.log.debug('Bad color code: ' + str(color))
             if speak:
-                self.speak_dialog('error.set.color')
+                self.speak_dialog('error_set_color')
 
-    @intent_handler('custom.eye.color.intent')
+    @intent_handler('custom_eye_color.intent')
     def handle_custom_eye_color(self, message):
         # Conversational interaction to set a custom eye color
 
@@ -301,31 +301,31 @@ class EnclosureControlSkill(OVOSSkill):
             except Exception:
                 return False
 
-        self.speak_dialog('set.custom.color')
+        self.speak_dialog('set_custom_color')
         wait_while_speaking()
-        r = self.get_response('get.r.value', validator=is_byte,
-                              on_fail="error.rgbvalue", num_retries=2)
+        r = self.get_response('get_r_value', validator=is_byte,
+                              on_fail="error_rgbvalue", num_retries=2)
         if not r:
             return  # cancelled
 
-        g = self.get_response('get.g.value', validator=is_byte,
-                              on_fail="error.rgbvalue", num_retries=2)
+        g = self.get_response('get_g_value', validator=is_byte,
+                              on_fail="error_rgbvalue", num_retries=2)
         if not g:
             return  # cancelled
 
-        b = self.get_response('get.b.value', validator=is_byte,
-                              on_fail="error.rgbvalue", num_retries=2)
+        b = self.get_response('get_b_value', validator=is_byte,
+                              on_fail="error_rgbvalue", num_retries=2)
         if not b:
             return  # cancelled
 
         custom_rgb = [r, g, b]
         
         default = False
-        if self.ask_yesno('set.default.eye.color') == 'yes':
+        if self.ask_yesno('set_default_eye_color') == 'yes':
             default = True
         self.set_eye_color(rgb=custom_rgb, make_default=default)
 
-    @intent_handler('eye.color.intent')
+    @intent_handler('eye_color.intent')
     def handle_eye_color(self, message):
         """ Callback to set eye color from list
 
@@ -333,16 +333,16 @@ class EnclosureControlSkill(OVOSSkill):
                 message (dict): messagebus message from intent parser
         """
         color_str = (message.data.get('color', None) or
-                     self.get_response('color.need'))
+                     self.get_response('color_need'))
         if color_str:
             match = color_from_description(color_str)
             if match is not None:
                 default = False
-                if self.ask_yesno('set.default.eye.color') == 'yes':
+                if self.ask_yesno('set_default_eye_color') == 'yes':
                     default = True
                 self.set_eye_color(color=match, make_default=default)
             else:
-                self.speak_dialog('color.not.exist')
+                self.speak_dialog('color_not_exist')
 
     def _parse_to_rgb(self, color):
         """ Convert color descriptor to RGB
@@ -442,13 +442,13 @@ class EnclosureControlSkill(OVOSSkill):
         if speak is True:
             percent = int(float(level) * float(100) / float(30))
             self.speak_dialog(
-                'brightness.set', data={'val': str(percent) + '%'})
+                'brightness_set', data={'val': str(percent) + '%'})
 
     def _set_brightness(self, brightness):
         # brightness can be a number or word like "full", "half"
         percent = self.parse_brightness(brightness)
         if percent is None:
-            self.speak_dialog('brightness.not.found.final')
+            self.speak_dialog('brightness_not_found_final')
         elif int(percent) is -1:
             self.handle_auto_brightness(None)
         else:
@@ -463,7 +463,7 @@ class EnclosureControlSkill(OVOSSkill):
                 message (dict): messagebus message from intent parser
         """
         brightness = (message.data.get('brightness', None) or
-                      self.get_response('brightness.not.found'))
+                      self.get_response('brightness_not_found'))
         if brightness:
             self._set_brightness(brightness)
 
