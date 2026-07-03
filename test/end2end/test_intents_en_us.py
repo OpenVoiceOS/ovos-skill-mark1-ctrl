@@ -14,6 +14,15 @@ import ovos_i2c_detection
 
 ovos_i2c_detection.is_mark_1 = lambda: True
 
+# The skill's __init__ refuses to load off a physical Mark 1; import it only
+# after is_mark_1 is stubbed. The colour handler follows up with a blocking
+# get_response/ask_yesno prompt that never resolves in a headless MiniCroft, so
+# short-circuit those to keep the routed handler from hanging the test.
+from ovos_skill_mark1_ctrl import EnclosureControlSkill
+
+EnclosureControlSkill.ask_yesno = lambda self, *a, **k: "no"
+EnclosureControlSkill.get_response = lambda self, *a, **k: None
+
 import time
 from unittest import TestCase
 
