@@ -1,11 +1,12 @@
-(skift|indstil|omskifter) (det|dit) (øje|) (lysstyrke|belysning) (niveau|) til {lysstyrke} (procent|)
-(skift|indstil|omskifter) (din|din) (øje|) (lysstyrke|belysning) (niveau|)
+(skift|indstil|omskifter) (dit|dit) (øje|) (lysstyrke|belysning) (niveau|) til {brightness} (procent|)
+(skift|indstil|omskifter) (dit|dit) (øje|) (lysstyrke|belysning) (niveau|)
 (skift|indstil|skift) til {brightness} (procent|) (øje|) (lysstyrke|belysning)
 drej (den|) (lysstyrke|belysning) (ned|op) til {brightness} (procent|)
-du er (også|) (lys|dæmpet)
+skru (den|) (lysstyrke|belysning) (ned|op) til {brightness} (procent|)
+du er (for|) (lys|dæmpet)
 dæmp (dine) øjne til {brightness} (procent|)
 dæmpe det lidt ned
-dæmpe ned til {lysstyrke} (procent|)
+dæmpe ned til {brightness} (procent|)
 lysne det op
 lysne op (en smule|) til {brightness} (procent|)
 skru (ned|op) (den|) (lysstyrke|belysning) til {brightness} (procent|)
