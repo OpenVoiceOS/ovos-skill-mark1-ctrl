@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ovos-skill-mark1-ctrl"
+dynamic = ["version"]
+description = "OVOS Mark 1 enclosure control skill"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "JarbasAi", email = "jarbasai@mailfence.com"}
+]
+keywords = ["ovos", "skill", "plugin"]
+dependencies = [
+    "ovos-color-parser>=0.0.8a1",
+    "ovos-i2c-detection>=0.0.6a1"
+]
+
+[project.optional-dependencies]
+test = [
+    "ovoscope>=1.5.0,<2.0.0",
+    "pytest>=7.0.0,<9",
+    "pytest-timeout>=2.0.0",
+    "ovos-core>=2.2.4a1,<2.3.0",
+    "ovos-padatious>=1.8.0a1,<2.0.0",
+    "ovos-workshop>=8.3.0a1,<9.0.0",
+    "ovos-bus-client>=2.2.0a1,<3.0.0",
+    "ovos-plugin-manager>=2.9.0a1,<3.0.0",
+    "ovos-config>=2.1.4a5,<3.0.0",
+    "ovos-utils>=0.13.4a1,<1.0.0",
+    "ovos-spec-tools>=1.4.0a1,<2.0.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl"
+
+[project.entry-points."ovos.plugin.skill"]
+"ovos-skill-mark1-ctrl.openvoiceos" = "ovos_skill_mark1_ctrl:EnclosureControlSkill"
+
+[tool.setuptools]
+packages = ["ovos_skill_mark1_ctrl"]
+
+[tool.setuptools.package-dir]
+ovos_skill_mark1_ctrl = ""
+
+[tool.setuptools.dynamic]
+version = {attr = "ovos_skill_mark1_ctrl.version.__version__"}
+
+[tool.setuptools.package-data]
+ovos_skill_mark1_ctrl = [
+    "*.json",
+    "locale/**/*",
+    "locale/*/*.intent",
+    "locale/*/*.dialog",
+    "locale/*/*.voc",
+]
