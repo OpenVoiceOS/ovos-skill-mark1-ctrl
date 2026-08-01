@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.3a5](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.0.3a5) (2026-08-01)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.0.3a4...0.0.3a5)
+
+**Merged pull requests:**
+
+- docs: rewrite README in Simplified Technical English [\#34](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/34) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.0.3a4](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.0.3a4) (2026-07-24)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.0.3a3...0.0.3a4)
