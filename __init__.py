@@ -198,7 +198,8 @@ class EnclosureControlSkill(OVOSSkill):
         self.play_animation(self.left_right_animation)
 
     @intent_handler(IntentBuilder("EnclosureEyesBlink")
-                    .require("blink").one_of("eyes", "animation")
+                    .require("blink")
+                    .optionally("eyes").optionally("animation")
                     .optionally("enclosure").optionally("right")
                     .optionally("left"))
     def handle_blink_eyes(self, message):
@@ -212,7 +213,8 @@ class EnclosureControlSkill(OVOSSkill):
         self.speak("so this is what it feels like having low F P S")
 
     @intent_handler(IntentBuilder("EnclosureEyesSpin")
-                    .require("spin").one_of("eyes", "animation")
+                    .require("spin")
+                    .optionally("eyes").optionally("animation")
                     .optionally("enclosure"))
     def handle_spin_eyes(self, message):
         self.speak("around the world, here i go")
@@ -235,21 +237,24 @@ class EnclosureControlSkill(OVOSSkill):
         self.speak("this was fun")
 
     @intent_handler(IntentBuilder("EnclosureMouthSmile")
-                    .require("smile").one_of("animation", "mouth")
+                    .require("smile")
+                    .optionally("animation").optionally("mouth")
                     .optionally("enclosure"))
     def handle_enclosure_smile(self, message):
         self.enclosure.mouth_smile()
         self.speak("i don't know how to smile")
 
     @intent_handler(IntentBuilder("EnclosureMouthListen")
-                    .require("listen").one_of("animation", "mouth")
+                    .require("listen")
+                    .optionally("animation").optionally("mouth")
                     .optionally("enclosure"))
     def handle_enclosure_listen(self, message):
         self.speak("when i do this i feel like I'm dancing")
         self.enclosure.mouth_listen()
 
     @intent_handler(IntentBuilder("EnclosureMouthThink")
-                    .require("think").one_of("animation", "mouth")
+                    .require("think")
+                    .optionally("animation").optionally("mouth")
                     .optionally("enclosure"))
     def handle_enclosure_think(self, message):
         self.speak("i love thinking")

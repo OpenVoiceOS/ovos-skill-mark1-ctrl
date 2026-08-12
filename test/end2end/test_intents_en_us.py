@@ -79,11 +79,11 @@ class TestIntentRouting(_RoutingTest):
     """Padatious routing for the eye-colour and brightness intents."""
 
     def test_set_the_eye_color_to_red(self):
-        routed = self._run("set the eye color to red", "eye_color.intent")
-        self.assertTrue(routed, "'set the eye color to red' did not route to eye_color.intent")
+        routed = self._run("set the eye color to red", "eye_color")
+        self.assertTrue(routed, "'set the eye color to red' did not route to eye_color")
         self.assertEqual(routed[0].get("color"), "red")
 
     def test_set_eye_brightness_to_50(self):
-        routed = self._run("set eye brightness to 50", "brightness.intent")
-        self.assertTrue(routed, "'set eye brightness to 50' did not route to brightness.intent")
+        routed = self._run("set eye brightness to 50", "brightness")
+        self.assertTrue(routed, "'set eye brightness to 50' did not route to brightness")
         self.assertEqual(routed[0].get("brightness"), "50")
