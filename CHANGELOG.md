@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.3a6](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.0.3a6) (2026-08-12)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.0.3a5...0.0.3a6)
+
+**Merged pull requests:**
+
+- test: add golden-utterance e2e suite for en-US [\#36](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/36) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.0.3a5](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.0.3a5) (2026-08-01)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.0.3a4...0.0.3a5)
