@@ -88,7 +88,7 @@ NEGATIVE_UTTERANCES = [
     ("what's the weather", "ovos-skill-weather.openvoiceos"),
     ("play some music", "ovos-skill-music.openvoiceos"),
     ("turn up the brightness", "ovos-skill-homeassistant.openvoiceos"),
-    ("change the light color to red", "ovos-skill-homeassistant.openvoiceos"),
+    ("turn off the living room lights", "ovos-skill-homeassistant.openvoiceos"),
     ("set a timer for 5 minutes", "ovos-skill-alerts.openvoiceos"),
     ("take a screenshot", "ovos-skill-screenshot.openvoiceos"),
     ("go to sleep", "ovos-skill-naptime.openvoiceos"),
