@@ -69,7 +69,12 @@ class _RoutingTest(TestCase):
                 {"utterances": [utterance], "lang": LANG},
                 {"session": session.serialize()},
             ))
-            time.sleep(3)
+            # Under CI load routing can take longer than a fixed sleep would
+            # allow, so poll for the routed message up to a bounded deadline
+            # instead of sleeping a fixed amount.
+            deadline = time.monotonic() + 15
+            while not routed and time.monotonic() < deadline:
+                time.sleep(0.5)
         finally:
             self.bus.remove(topic, cb)
         return routed
