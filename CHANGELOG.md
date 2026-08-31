@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.0a2](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.1.0a2) (2026-08-31)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.1.0a1...0.1.0a2)
+
+**Merged pull requests:**
+
+- docs: describe entity value hints [\#41](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/41) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.1.0a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.1.0a1) (2026-08-31)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.0.3a6...0.1.0a1)
