@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.0a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.1.0a1) (2026-08-31)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.0.3a6...0.1.0a1)
+
+**Merged pull requests:**
+
+- fix: replace fixed sleep with bounded polling in end2end tests [\#39](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/39) ([JarbasAl](https://github.com/JarbasAl))
+- feat: register {brightness}/{color} entity files [\#38](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/38) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.0.3a6](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.0.3a6) (2026-08-12)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.0.3a5...0.0.3a6)
