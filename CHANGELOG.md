@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.1a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.1.1a1) (2026-09-01)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.1.0a2...0.1.1a1)
+
+**Merged pull requests:**
+
+- fix: allow ovos-config 3.x [\#43](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/43) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.1.0a2](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.1.0a2) (2026-08-31)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.1.0a1...0.1.0a2)
