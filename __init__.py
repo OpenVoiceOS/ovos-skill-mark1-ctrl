@@ -6,7 +6,6 @@ from ovos_utils import create_daemon, classproperty
 from ovos_utils.log import LOG
 from ovos_utils.process_utils import RuntimeRequirements
 from ovos_workshop.decorators import intent_handler
-from ovos_workshop.intents import IntentBuilder
 from ovos_workshop.skills import OVOSSkill
 from ovos_bus_client.message import Message
 from ovos_i2c_detection import is_mark_1
@@ -156,113 +155,88 @@ class EnclosureControlSkill(OVOSSkill):
             self.animations = animation
             self.thread = create_daemon(self.run)
 
-    @intent_handler(IntentBuilder("EnclosureLookRight")
-                    .require("look").require("right")
-                    .optionally("enclosure"))
+    @intent_handler("look_right.intent")
     def handle_look_right(self, message):
         self.speak("looking right")
         self.enclosure.eyes_look("r")
 
-    @intent_handler(IntentBuilder("EnclosureLookLeft")
-                    .require("look").require("left").optionally("enclosure"))
+    @intent_handler("look_left.intent")
     def handle_look_left(self, message):
         self.speak("looking left")
         self.enclosure.eyes_look("l")
 
-    @intent_handler(IntentBuilder("EnclosureLookUp")
-                    .require("look").require("up").optionally("enclosure"))
+    @intent_handler("look_up.intent")
     def handle_look_up(self, message):
         self.speak("looking up")
         self.enclosure.eyes_look("u")
 
-    @intent_handler(IntentBuilder("EnclosureLookDown")
-                    .require("look").require("down").optionally("enclosure"))
+    @intent_handler("look_down.intent")
     def handle_look_down(self, message):
         self.speak("looking down")
         self.enclosure.eyes_look("d")
 
-    @intent_handler(IntentBuilder("EnclosureLookUpDown")
-                    .require("look").require("up")
-                    .require("down").optionally("enclosure")
-                    .optionally("animation"))
+    @intent_handler("look_up_down.intent")
     def handle_look_up_down(self, message):
         self.speak("up and down, up and down")
         self.play_animation(self.up_down_animation)
 
-    @intent_handler(IntentBuilder("EnclosureLookLeftRight")
-                    .require("look").require("right")
-                    .require("left").optionally("enclosure")
-                    .optionally("animation"))
+    @intent_handler("look_left_right.intent")
     def handle_look_left_right(self, message):
         self.speak("left and right, left and right")
         self.play_animation(self.left_right_animation)
 
-    @intent_handler(IntentBuilder("EnclosureEyesBlink")
-                    .require("blink")
-                    .optionally("eyes").optionally("animation")
-                    .optionally("enclosure").optionally("right")
-                    .optionally("left"))
+    @intent_handler("blink.intent")
     def handle_blink_eyes(self, message):
+        """ Blink the eyes, optionally in just one direction.
+
+        Args:
+            message (Message): carries an optional {direction} slot
+                ("left"/"right"); absent means blink both eyes.
+        """
+        direction = message.data.get("direction")
         for i in range(0, 10):
-            if "right" in message.data:
+            if direction == "right":
                 self.enclosure.eyes_blink("r")
-            if "left" in message.data:
+            elif direction == "left":
                 self.enclosure.eyes_blink("l")
             else:
                 self.enclosure.eyes_blink("b")
         self.speak("so this is what it feels like having low F P S")
 
-    @intent_handler(IntentBuilder("EnclosureEyesSpin")
-                    .require("spin")
-                    .optionally("eyes").optionally("animation")
-                    .optionally("enclosure"))
+    @intent_handler("spin.intent")
     def handle_spin_eyes(self, message):
         self.speak("around the world, here i go")
         self.enclosure.eyes_spin()
 
-    @intent_handler(IntentBuilder("EnclosureEyesNarrow")
-                    .require("narrow").require("eyes")
-                    .optionally("enclosure"))
+    @intent_handler("narrow_eyes.intent")
     def handle_narrow_eyes(self, message):
         self.speak("this is my evil face")
         self.enclosure.eyes_narrow()
         self.enclosure.eyes_color(255, 0, 0)
 
-    @intent_handler(IntentBuilder("EnclosureReset")
-                    .require("reset").require("enclosure"))
+    @intent_handler("reset.intent")
     def handle_enclosure_reset(self, message):
         self.handle_default_eyes()
         self.enclosure.eyes_reset()
         self.enclosure.mouth_reset()
         self.speak("this was fun")
 
-    @intent_handler(IntentBuilder("EnclosureMouthSmile")
-                    .require("smile")
-                    .optionally("animation").optionally("mouth")
-                    .optionally("enclosure"))
+    @intent_handler("smile.intent")
     def handle_enclosure_smile(self, message):
         self.enclosure.mouth_smile()
         self.speak("i don't know how to smile")
 
-    @intent_handler(IntentBuilder("EnclosureMouthListen")
-                    .require("listen")
-                    .optionally("animation").optionally("mouth")
-                    .optionally("enclosure"))
+    @intent_handler("listen.intent")
     def handle_enclosure_listen(self, message):
         self.speak("when i do this i feel like I'm dancing")
         self.enclosure.mouth_listen()
 
-    @intent_handler(IntentBuilder("EnclosureMouthThink")
-                    .require("think")
-                    .optionally("animation").optionally("mouth")
-                    .optionally("enclosure"))
+    @intent_handler("think.intent")
     def handle_enclosure_think(self, message):
         self.speak("i love thinking")
         self.enclosure.mouth_think()
 
-    @intent_handler(IntentBuilder("EnclosureCrazyEyes")
-                    .require("eyes").optionally("animation").require("crazy")
-                    .optionally("enclosure"))
+    @intent_handler("crazy_eyes.intent")
     def handle_enclosure_crazy_eyes(self, message):
         self.speak("artificial intelligence performing artificial "
                    "stupidity, you don't see this every day")

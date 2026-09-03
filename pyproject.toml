@@ -55,4 +55,5 @@ ovos_skill_mark1_ctrl = [
     "locale/*/*.intent",
     "locale/*/*.dialog",
     "locale/*/*.voc",
+    "locale/*/*.entity",
 ]
