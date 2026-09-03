@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.0a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.2.0a1) (2026-09-03)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.1.1a1...0.2.0a1)
+
+**Merged pull requests:**
+
+- feat: migrate en-US intents to language-agnostic file-intents [\#45](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/45) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.1.1a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.1.1a1) (2026-09-01)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.1.0a2...0.1.1a1)
