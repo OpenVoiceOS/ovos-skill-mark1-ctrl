@@ -34,9 +34,10 @@ pip install ovos-skill-mark1-ctrl
 * "look up and down"
 * "reset enclosure"
 
-* "narrow your eyes"
-* "spin your eyes"
-* "blink your eyes"
+* "narrow eyes"
+* "spin eyes"
+* "blink"
+* "blink left"
 
 * "smile animation"
 * "listen animation"
