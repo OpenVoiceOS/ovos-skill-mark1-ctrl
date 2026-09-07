@@ -1,1 +1,8 @@
 blink [{direction}] [<eyes>] [<animation>] [<enclosure>]
+can you blink your <eyes>
+blink your <eyes> for me
+blink the {direction} eye
+please blink your <eyes>
+give me a blink
+do a blink [<animation>]
+wink with the {direction} eye
