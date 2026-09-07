@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.3a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.2.3a1) (2026-09-07)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.2.2a1...0.2.3a1)
+
+**Merged pull requests:**
+
+- fix: repair intent lines with localised slot names or broken syntax [\#52](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/52) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.2.2a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.2.2a1) (2026-09-07)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.2.1a1...0.2.2a1)
