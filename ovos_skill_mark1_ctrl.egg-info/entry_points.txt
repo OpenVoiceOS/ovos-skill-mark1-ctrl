@@ -1,0 +1,2 @@
+[ovos.plugin.skill]
+ovos-skill-mark1-ctrl.openvoiceos = ovos_skill_mark1_ctrl:EnclosureControlSkill

@@ -1,0 +1,92 @@
+Metadata-Version: 2.4
+Name: ovos-skill-mark1-ctrl
+Version: 0.3.0a1
+Summary: OVOS Mark 1 enclosure control skill
+Author-email: JarbasAi <jarbasai@mailfence.com>
+License: Apache-2.0
+Project-URL: Homepage, https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl
+Keywords: ovos,skill,plugin
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ovos-color-parser>=0.0.8a1
+Requires-Dist: ovos-i2c-detection>=0.0.6a1
+Requires-Dist: ovos-workshop<10.0.0,>=9.5.0a1
+Provides-Extra: test
+Requires-Dist: ovoscope<2.0.0,>=1.6.8a1; extra == "test"
+Requires-Dist: pytest<9,>=7.0.0; extra == "test"
+Requires-Dist: pytest-timeout>=2.0.0; extra == "test"
+Requires-Dist: ovos-core[lgpl,plugins]>=2.2.4a1; extra == "test"
+Requires-Dist: ovos-padatious<3.0.0,>=2.0.4a1; extra == "test"
+Requires-Dist: ovos-workshop<10.0.0,>=9.5.0a1; extra == "test"
+Requires-Dist: ovos-bus-client<3.0.0,>=2.2.0a1; extra == "test"
+Requires-Dist: ovos-plugin-manager<3.0.0,>=2.9.0a1; extra == "test"
+Requires-Dist: ovos-config<4.0.0,>=2.1.4a5; extra == "test"
+Requires-Dist: ovos-utils<1.0.0,>=0.13.4a1; extra == "test"
+Requires-Dist: ovos-spec-tools<2.0.0,>=1.4.0a1; extra == "test"
+Dynamic: license-file
+
+## Mark1 Enclosure Control
+
+An OVOS skill that controls the Mycroft Mark 1 enclosure by voice.
+
+## Description
+
+The Mycroft Mark 1 has a matrix of eyes that can change color and play
+animations. This skill lets you control those eyes and other enclosure
+features by voice, including eye color, brightness, and eye movement
+animations.
+
+Set the eye color to a named color ("blue", "magenta", "teal", and others)
+or to a custom RGB value. See
+[ovos-color-parser](https://github.com/OpenVoiceOS/ovos-color-parser) for
+the full list of supported colors and formats.
+
+## Install
+
+```bash
+pip install ovos-skill-mark1-ctrl
+```
+
+## Examples
+
+* "Set your eye color to green"
+* "Set a custom eye color" (you'll be prompted for values)
+* "Dim to 50%"
+* "look up"
+* "look down"
+* "look left"
+
+* "look right"
+* "look left and right"
+* "look up and down"
+* "reset enclosure"
+
+* "narrow eyes"
+* "spin eyes"
+* "blink"
+* "blink left"
+
+* "smile animation"
+* "listen animation"
+* "think animation"
+
+## Entity hints
+
+The skill ships `locale/<lang>/color.entity` and `locale/<lang>/brightness.entity`, listing example values ("magenta", "teal", ...; "full", "bright", "half", "dim", "low", "auto", ...) for the `{color}` and `{brightness}` slots. These are hints, not a closed list: a color or brightness word not on the list still fills the slot; listed values simply match with more confidence. `ovos-workshop` (>=9.5.0a1) registers every shipped `.entity` file automatically when the skill's language resources are loaded, so nothing needs to be configured for this.
+
+Numeric brightness ("50%", "50 percent") is parsed directly from the utterance by the skill's own code rather than from `brightness.entity`: resource files treat any line starting with `#` as a comment, so the file's leading `#`/`##%`-style placeholder lines never reach the matcher.
+
+## Related projects
+
+* [ovos-color-parser](https://github.com/OpenVoiceOS/ovos-color-parser): parses the color names and values this skill accepts
+* [ovos-i2c-detection](https://github.com/OpenVoiceOS/ovos-i2c-detection): detects the Mark 1 enclosure hardware this skill controls
+
+## License
+
+Apache-2.0
+
+## Credits
+
+JarbasAI
+
+[MycroftAI](https://github.com/MycroftAI/mycroft-mark-1)
