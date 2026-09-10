@@ -190,14 +190,17 @@ class EnclosureControlSkill(OVOSSkill):
         """ Blink the eyes, optionally in just one direction.
 
         Args:
-            message (Message): carries an optional {direction} slot
-                ("left"/"right"); absent means blink both eyes.
+            message (Message): carries an optional {direction} slot, whose
+                value is in the session language -- `esquerra`, `links`,
+                `venstre` -- so it is resolved against the locale's own
+                `left.voc` and `right.voc` rather than compared to English.
+                Absent, or a word neither file carries, blinks both eyes.
         """
         direction = message.data.get("direction")
         for i in range(0, 10):
-            if direction == "right":
+            if direction and self.voc_match(direction, "right"):
                 self.enclosure.eyes_blink("r")
-            elif direction == "left":
+            elif direction and self.voc_match(direction, "left"):
                 self.enclosure.eyes_blink("l")
             else:
                 self.enclosure.eyes_blink("b")

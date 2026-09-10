@@ -1,0 +1,16 @@
+ovos-color-parser>=0.0.8a1
+ovos-i2c-detection>=0.0.6a1
+ovos-workshop<10.0.0,>=9.5.0a1
+
+[test]
+ovoscope<2.0.0,>=1.6.8a1
+pytest<9,>=7.0.0
+pytest-timeout>=2.0.0
+ovos-core[lgpl,plugins]>=2.2.4a1
+ovos-padatious<3.0.0,>=2.0.4a1
+ovos-workshop<10.0.0,>=9.5.0a1
+ovos-bus-client<3.0.0,>=2.2.0a1
+ovos-plugin-manager<3.0.0,>=2.9.0a1
+ovos-config<4.0.0,>=2.1.4a5
+ovos-utils<1.0.0,>=0.13.4a1
+ovos-spec-tools<2.0.0,>=1.4.0a1
