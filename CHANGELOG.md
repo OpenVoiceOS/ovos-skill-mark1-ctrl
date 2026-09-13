@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.3.0a3](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.3.0a3) (2026-09-13)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.3.0a2...0.3.0a3)
+
+**Merged pull requests:**
+
+- locale: set\_default\_eye\_color.dialog in 4 locales \(machine translation, linguonnx\) [\#59](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/59) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+- fix\(da-DK\): duplicated alternatives and meaningless group in brightness.intent [\#57](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/57) ([andlo](https://github.com/andlo))
+
 ## [0.3.0a2](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.3.0a2) (2026-09-07)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.3.0a1...0.3.0a2)
