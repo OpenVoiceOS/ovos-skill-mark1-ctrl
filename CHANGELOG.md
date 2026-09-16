@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.0a4](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.3.0a4) (2026-09-16)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.3.0a3...0.3.0a4)
+
+**Merged pull requests:**
+
+- test: assert enclosure command effects for color/brightness intents [\#58](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/58) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.3.0a3](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.3.0a3) (2026-09-13)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.3.0a2...0.3.0a3)
