@@ -1,0 +1,51 @@
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "titta åt höger enclosure", "lang": "sv-SE", "intent_label": "look_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "höger titta enclosure", "lang": "sv-SE", "intent_label": "look_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "rikta ögonen åt höger", "lang": "sv-SE", "intent_label": "look_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "titta åt vänster enclosure", "lang": "sv-SE", "intent_label": "look_left", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "vänster titta enclosure", "lang": "sv-SE", "intent_label": "look_left", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "rikta ögonen åt vänster", "lang": "sv-SE", "intent_label": "look_left", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "titta uppåt enclosure", "lang": "sv-SE", "intent_label": "look_up", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "upp titta enclosure", "lang": "sv-SE", "intent_label": "look_up", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "rikta ögonen uppåt", "lang": "sv-SE", "intent_label": "look_up", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "titta nedåt enclosure", "lang": "sv-SE", "intent_label": "look_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "ner titta enclosure", "lang": "sv-SE", "intent_label": "look_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "rikta ögonen nedåt", "lang": "sv-SE", "intent_label": "look_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "titta uppåt och nedåt animation enclosure", "lang": "sv-SE", "intent_label": "look_up_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "ner upp titta animation enclosure", "lang": "sv-SE", "intent_label": "look_up_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "rikta ögonen uppåt och nedåt", "lang": "sv-SE", "intent_label": "look_up_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "titta åt vänster och höger animation enclosure", "lang": "sv-SE", "intent_label": "look_left_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "titta från sida till sida animation enclosure", "lang": "sv-SE", "intent_label": "look_left_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "vänster höger titta animation enclosure", "lang": "sv-SE", "intent_label": "look_left_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "blinka animation enclosure", "lang": "sv-SE", "intent_label": "blink", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "gör en blinkning enclosure", "lang": "sv-SE", "intent_label": "blink", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "blinka med öga enclosure", "lang": "sv-SE", "intent_label": "blink", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "snurra öga enclosure", "lang": "sv-SE", "intent_label": "spin", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "låt öga snurra enclosure", "lang": "sv-SE", "intent_label": "spin", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "rotera öga enclosure", "lang": "sv-SE", "intent_label": "spin", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "smalna av öga enclosure", "lang": "sv-SE", "intent_label": "narrow_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "gör öga smala enclosure", "lang": "sv-SE", "intent_label": "narrow_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "kisa med öga enclosure", "lang": "sv-SE", "intent_label": "narrow_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "återställ enclosure", "lang": "sv-SE", "intent_label": "reset", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "enclosure återställ", "lang": "sv-SE", "intent_label": "reset", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "återställ allt till början enclosure", "lang": "sv-SE", "intent_label": "reset", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "le animation med munnen enclosure", "lang": "sv-SE", "intent_label": "smile", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "gör ett leende enclosure", "lang": "sv-SE", "intent_label": "smile", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "sätt på ett leende ansikte enclosure", "lang": "sv-SE", "intent_label": "smile", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "lyssna animation med munnen enclosure", "lang": "sv-SE", "intent_label": "listen", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "börja lyssna enclosure", "lang": "sv-SE", "intent_label": "listen", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "aktivera lyssnaranimationen enclosure", "lang": "sv-SE", "intent_label": "listen", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "tänk animation med munnen enclosure", "lang": "sv-SE", "intent_label": "think", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "börja tänk enclosure", "lang": "sv-SE", "intent_label": "think", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "aktivera tänkaranimationen enclosure", "lang": "sv-SE", "intent_label": "think", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "gör galna öga animation enclosure", "lang": "sv-SE", "intent_label": "crazy_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "sätt på galna ögon enclosure", "lang": "sv-SE", "intent_label": "crazy_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "visa tokiga ögon animation enclosure", "lang": "sv-SE", "intent_label": "crazy_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "ställ in en anpassad ögonfärg", "lang": "sv-SE", "intent_label": "custom_eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "ställ in anpassad ögonfärg", "lang": "sv-SE", "intent_label": "custom_eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "byt till en anpassad ögonfärg", "lang": "sv-SE", "intent_label": "custom_eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "byt dina ögon till en standard färg", "lang": "sv-SE", "intent_label": "eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "byt dina ögonfärg till standard", "lang": "sv-SE", "intent_label": "eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "byt ögonen till en standard färg", "lang": "sv-SE", "intent_label": "eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "byt ljusstyrkan på dina ögon", "lang": "sv-SE", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "sätt ner ljusstyrkan till 20 percent", "lang": "sv-SE", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "ändra ljus på dina ögon till 20 procent", "lang": "sv-SE", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false}
