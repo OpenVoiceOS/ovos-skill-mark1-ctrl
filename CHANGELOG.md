@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.6.0a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.6.0a1) (2026-09-17)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.5.0a1...0.6.0a1)
+
+**Merged pull requests:**
+
+- feat\(locale\): fill de-DE, es-ES, gl-ES and ca-ES gaps against en-US [\#65](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/65) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
+## [0.5.0a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.5.0a1) (2026-09-17)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.4.0a1...0.5.0a1)
+
 ## [0.4.0a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.4.0a1) (2026-09-17)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.3.0a4...0.4.0a1)
