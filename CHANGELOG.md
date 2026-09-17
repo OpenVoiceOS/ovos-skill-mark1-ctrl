@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.6.0a2](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.6.0a2) (2026-09-17)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.6.0a1...0.6.0a2)
+
+**Merged pull requests:**
+
+- chore: remove dead locale resources [\#64](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/64) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.6.0a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.6.0a1) (2026-09-17)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.5.0a1...0.6.0a1)
