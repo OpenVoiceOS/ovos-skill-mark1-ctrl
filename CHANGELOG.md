@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.7.1a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.7.1a1) (2026-09-18)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.7.0a1...0.7.1a1)
+
+**Merged pull requests:**
+
+- fix\(locale\): rewrite fr-FR brightness.intent in French and normalize sv-SE percent/procent [\#73](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/73) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.7.0a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.7.0a1) (2026-09-18)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.6.0a3...0.7.0a1)
