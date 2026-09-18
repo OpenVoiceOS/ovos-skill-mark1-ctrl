@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.6.0a3](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.6.0a3) (2026-09-18)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.6.0a2...0.6.0a3)
+
+**Merged pull requests:**
+
+- test: golden utterances for every locale [\#70](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/70) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.6.0a2](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.6.0a2) (2026-09-17)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.6.0a1...0.6.0a2)
