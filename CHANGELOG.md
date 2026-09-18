@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.7.0a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.7.0a1) (2026-09-18)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.6.0a3...0.7.0a1)
+
+**Merged pull requests:**
+
+- feat\(locale\): fill direction.entity for nl-NL and pt-BR against en-US [\#71](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/71) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.6.0a3](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.6.0a3) (2026-09-18)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.6.0a2...0.6.0a3)
