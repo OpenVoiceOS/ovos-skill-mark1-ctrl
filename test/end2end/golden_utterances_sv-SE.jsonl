@@ -47,5 +47,5 @@
 {"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "byt dina ögonfärg till standard", "lang": "sv-SE", "intent_label": "eye_color", "intent_type": "padatious", "needs_manual": false}
 {"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "byt ögonen till en standard färg", "lang": "sv-SE", "intent_label": "eye_color", "intent_type": "padatious", "needs_manual": false}
 {"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "byt ljusstyrkan på dina ögon", "lang": "sv-SE", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "sätt ner ljusstyrkan till 20 percent", "lang": "sv-SE", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "sätt ner ljusstyrkan till 20 procent", "lang": "sv-SE", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false}
 {"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "ändra ljus på dina ögon till 20 procent", "lang": "sv-SE", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false}
