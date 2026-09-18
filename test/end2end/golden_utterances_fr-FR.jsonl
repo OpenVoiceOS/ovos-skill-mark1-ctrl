@@ -46,6 +46,6 @@
 {"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "changer la couleur des yeux", "lang": "fr-FR", "intent_label": "eye_color", "intent_type": "padatious", "needs_manual": false}
 {"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "changer la couleur des yeux en Par défaut", "lang": "fr-FR", "intent_label": "eye_color", "intent_type": "padatious", "needs_manual": false}
 {"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "changer la couleur d'yeux à Par défaut", "lang": "fr-FR", "intent_label": "eye_color", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "change the eye brightness level", "lang": "fr-FR", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "change the eye brightness level sur 20 percent", "lang": "fr-FR", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "change sur 20 percent eye brightness", "lang": "fr-FR", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "change la luminosité des yeux", "lang": "fr-FR", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "change la luminosité des yeux à 20 pour cent", "lang": "fr-FR", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "change à 20 pour cent la luminosité des yeux", "lang": "fr-FR", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false}
