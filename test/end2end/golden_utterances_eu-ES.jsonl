@@ -1,0 +1,51 @@
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "begiratu eskuinera egitura", "lang": "eu-ES", "intent_label": "look_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "eskuinera begiratu egitura", "lang": "eu-ES", "intent_label": "look_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "zuzendu begiak eskuinera", "lang": "eu-ES", "intent_label": "look_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "begiratu ezkerrera egitura", "lang": "eu-ES", "intent_label": "look_left", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "ezkerrera begiratu egitura", "lang": "eu-ES", "intent_label": "look_left", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "zuzendu begiak ezkerrera", "lang": "eu-ES", "intent_label": "look_left", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "begiratu gora egitura", "lang": "eu-ES", "intent_label": "look_up", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "gora begiratu egitura", "lang": "eu-ES", "intent_label": "look_up", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "zuzendu begiak gora", "lang": "eu-ES", "intent_label": "look_up", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "begiratu behera egitura", "lang": "eu-ES", "intent_label": "look_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "behera begiratu egitura", "lang": "eu-ES", "intent_label": "look_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "zuzendu begiak behera", "lang": "eu-ES", "intent_label": "look_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "begiratu gora eta behera animazio egitura", "lang": "eu-ES", "intent_label": "look_up_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "behera gora begiratu animazio egitura", "lang": "eu-ES", "intent_label": "look_up_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "zuzendu begiak gora eta behera", "lang": "eu-ES", "intent_label": "look_up_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "begiratu ezkerrera eta eskuinera animazio egitura", "lang": "eu-ES", "intent_label": "look_left_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "ezker eskuin begiratu animazio egitura", "lang": "eu-ES", "intent_label": "look_left_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "zuzendu begiak ezkerrera eta eskuinera", "lang": "eu-ES", "intent_label": "look_left_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "kliska animazio egitura", "lang": "eu-ES", "intent_label": "blink", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "egin kliska bat egitura", "lang": "eu-ES", "intent_label": "blink", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "kliskatu begia egitura", "lang": "eu-ES", "intent_label": "blink", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "biratu begia egitura", "lang": "eu-ES", "intent_label": "spin", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "jiratu begiak", "lang": "eu-ES", "intent_label": "spin", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "biratu begiak", "lang": "eu-ES", "intent_label": "spin", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "estutu begia egitura", "lang": "eu-ES", "intent_label": "narrow_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "jarri begia estu egitura", "lang": "eu-ES", "intent_label": "narrow_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "estutu begiak", "lang": "eu-ES", "intent_label": "narrow_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "lehenetsira itzuli egitura", "lang": "eu-ES", "intent_label": "reset", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "egitura lehenetsira itzuli", "lang": "eu-ES", "intent_label": "reset", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "jarri dena hasieran egitura", "lang": "eu-ES", "intent_label": "reset", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "irribarre egin animazio ahoarekin egitura", "lang": "eu-ES", "intent_label": "smile", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "egin irribarre bat egitura", "lang": "eu-ES", "intent_label": "smile", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "jarri aurpegi irribarretsua egitura", "lang": "eu-ES", "intent_label": "smile", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "entzun animazio ahoarekin egitura", "lang": "eu-ES", "intent_label": "listen", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "hasi entzun egitura", "lang": "eu-ES", "intent_label": "listen", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "piztu entzuteko animazioa egitura", "lang": "eu-ES", "intent_label": "listen", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "pentsatu animazio ahoarekin egitura", "lang": "eu-ES", "intent_label": "think", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "hasi pentsatu egitura", "lang": "eu-ES", "intent_label": "think", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "piztu pentsatzeko animazioa egitura", "lang": "eu-ES", "intent_label": "think", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "jarri begia ero animazio egitura", "lang": "eu-ES", "intent_label": "crazy_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "egin begia ero egitura", "lang": "eu-ES", "intent_label": "crazy_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "erakutsi begia eroak animazio egitura", "lang": "eu-ES", "intent_label": "crazy_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "ezarri begien kolore pertsonalizatura", "lang": "eu-ES", "intent_label": "custom_eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "ezarri begi kolore pertsonalizatua", "lang": "eu-ES", "intent_label": "custom_eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "aldatu begien kolore pertsonalizatura", "lang": "eu-ES", "intent_label": "custom_eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "aldatu begien kolorea lehenetsia izatera", "lang": "eu-ES", "intent_label": "eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "aldatu begiak lehenetsia kolorekoak izatera", "lang": "eu-ES", "intent_label": "eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "aldatu begien kolorea", "lang": "eu-ES", "intent_label": "eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "aldatu distira 20 ehuneko mailara", "lang": "eu-ES", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "aldatu begien distira maila 20 ehuneko mailara", "lang": "eu-ES", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "distira gehitu", "lang": "eu-ES", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false}
