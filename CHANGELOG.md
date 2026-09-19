@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.7.2a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.7.2a1) (2026-09-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.7.1a1...0.7.2a1)
+
+**Merged pull requests:**
+
+- fix\(locale\): group the two ca-ES brightness alternations [\#76](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/76) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.7.1a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.7.1a1) (2026-09-18)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.7.0a1...0.7.1a1)
