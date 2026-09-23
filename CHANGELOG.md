@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.8.0a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.8.0a1) (2026-09-23)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.7.2a1...0.8.0a1)
+
+**Merged pull requests:**
+
+- feat: locale balance — en-US ca-ES da-DK de-DE es-ES eu-ES fr-FR gl-ES it-IT kab nl-NL oc-FR pt-BR pt-PT sv-SE [\#55](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/55) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.7.2a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.7.2a1) (2026-09-19)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.7.1a1...0.7.2a1)
