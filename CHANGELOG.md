@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.8.1a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.8.1a1) (2026-09-23)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.8.0a1...0.8.1a1)
+
+**Merged pull requests:**
+
+- fix\(locale\): split bare-pipe lines into one value per line [\#79](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/79) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.8.0a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.8.0a1) (2026-09-23)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.7.2a1...0.8.0a1)
