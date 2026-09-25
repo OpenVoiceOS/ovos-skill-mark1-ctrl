@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.8.2a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.8.2a1) (2026-09-25)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.8.1a1...0.8.2a1)
+
+**Merged pull requests:**
+
+- fix: place the direction slot in el-GR and ru-RU blink.intent [\#81](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/81) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.8.1a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.8.1a1) (2026-09-23)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.8.0a1...0.8.1a1)
