@@ -54,6 +54,16 @@ class TestBlinkDirectionReachesTheEnclosure(unittest.TestCase):
         self.assertEqual(self._blinked("rechts", "de-DE"), {"r"})
         self.assertEqual(self._blinked("links", "de-DE"), {"l"})
 
+    def test_the_two_locales_that_gained_the_template(self):
+        # el-GR and ru-RU shipped direction.entity, left.voc and right.voc
+        # and no blink.intent template that placed the slot, so the slot
+        # never arrived. The template is in place now, and the handler must
+        # read the Greek and the Russian word the same way.
+        self.assertEqual(self._blinked("δεξιά", "el-GR"), {"r"})
+        self.assertEqual(self._blinked("αριστερά", "el-GR"), {"l"})
+        self.assertEqual(self._blinked("направо", "ru-RU"), {"r"})
+        self.assertEqual(self._blinked("налево", "ru-RU"), {"l"})
+
     def test_the_locale_selects_the_vocabulary(self):
         # The control for the case above. "rechts" is carried by de-DE's
         # right.voc and by no en-US file, so under en-US the handler must
