@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.8.3a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.8.3a1) (2026-09-27)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.8.2a1...0.8.3a1)
+
+**Merged pull requests:**
+
+- fix\(locale\): brightness.levels.value takes an OVOS-INTENT-2 §2 base name [\#83](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/83) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.8.2a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.8.2a1) (2026-09-25)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.8.1a1...0.8.2a1)
