@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.10.0a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.10.0a1) (2026-09-28)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.9.0a3...0.10.0a1)
+
+**Merged pull requests:**
+
+- feat: skill.json for the store, en-US and its locales [\#91](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/91) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.9.0a3](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.9.0a3) (2026-09-28)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.9.0a2...0.9.0a3)
