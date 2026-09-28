@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.9.0a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.9.0a1) (2026-09-28)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.8.3a1...0.9.0a1)
+
+**Merged pull requests:**
+
+- feat\(locale\): draft es-CO from es-ES \(copy, unvouched\) [\#85](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/85) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.8.3a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.8.3a1) (2026-09-27)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.8.2a1...0.8.3a1)
