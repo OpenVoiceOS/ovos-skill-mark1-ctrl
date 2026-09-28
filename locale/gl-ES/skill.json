@@ -1,0 +1,29 @@
+{
+  "skill_id": "ovos-skill-mark1-ctrl.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl",
+  "name": "Mark 1 Enclosure Control",
+  "description": "Control the Mycroft Mark 1 enclosure by voice.",
+  "examples": [
+    "podes pestanexar",
+    "aumenta o brillo",
+    "pon os teus ollos da cor que eu escolla",
+    "activa a cara de escoita",
+    "mira ao chan",
+    "podes mirar á esquerda",
+    "mira dun lado ao outro",
+    "podes mirar á dereita",
+    "mira ao teito",
+    "mira abaixo e arriba",
+    "entrecerra os ollos",
+    "podes reiniciarte",
+    "podes sorrir",
+    "fai a animación de xiro",
+    "activa a cara de pensar"
+  ],
+  "tags": [
+    "mark1",
+    "enclosure",
+    "eyes",
+    "system"
+  ]
+}

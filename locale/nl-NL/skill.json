@@ -1,0 +1,29 @@
+{
+  "skill_id": "ovos-skill-mark1-ctrl.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl",
+  "name": "Mark 1 Enclosure Control",
+  "description": "Control the Mycroft Mark 1 enclosure by voice.",
+  "examples": [
+    "kun je knipperen",
+    "verhelder",
+    "ik wil zelf een oogkleur kiezen",
+    "doe alsof je luistert",
+    "kijk naar de vloer",
+    "kijk naar je linkerkant",
+    "kijk van links naar rechts",
+    "kijk naar je rechterkant",
+    "kijk naar het plafond",
+    "kijk omlaag en omhoog",
+    "knijp je ogen een beetje dicht",
+    "zet je gezicht terug",
+    "kun je lachen",
+    "start de draaianimatie",
+    "doe alsof je nadenkt"
+  ],
+  "tags": [
+    "mark1",
+    "enclosure",
+    "eyes",
+    "system"
+  ]
+}
