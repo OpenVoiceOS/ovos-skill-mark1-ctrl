@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.9.0a3](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.9.0a3) (2026-09-28)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.9.0a2...0.9.0a3)
+
+**Merged pull requests:**
+
+- test: multilang runner reads its locales from the golden files on disk [\#89](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/89) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.9.0a2](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.9.0a2) (2026-09-28)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.9.0a1...0.9.0a2)
@@ -253,6 +261,16 @@
 - updating German translation [\#7](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/7) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 - Add Catalan strings [\#6](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/6) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 - Add Catalan strings [\#5](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/5) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+
+## [0.0.1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.0.1) (2025-02-16)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/fa645d479e4d155c073c71282f2838bf159c8fb9...0.0.1)
+
+**Merged pull requests:**
+
+- Update [\#3](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/3) ([builderjer](https://github.com/builderjer))
+- Update [\#2](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/2) ([builderjer](https://github.com/builderjer))
+- update to make useable again [\#1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/1) ([builderjer](https://github.com/builderjer))
 
 
 
