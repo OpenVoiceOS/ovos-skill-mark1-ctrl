@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.10.0a2](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.10.0a2) (2026-10-01)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.10.0a1...0.10.0a2)
+
+**Merged pull requests:**
+
+- fix\(locale\): fa-IR and pl-PL custom eye colour lines no longer duplicate eye\_color [\#93](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/93) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.10.0a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.10.0a1) (2026-09-28)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.9.0a3...0.10.0a1)
