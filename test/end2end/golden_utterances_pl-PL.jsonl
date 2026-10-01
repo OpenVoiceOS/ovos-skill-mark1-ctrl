@@ -1,0 +1,3 @@
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "wygląd w dół", "lang": "pl-PL", "intent_label": "look_down", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "zmienić oczy na niebieski", "lang": "pl-PL", "intent_label": "eye_color", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "Ustaw jasność 50", "lang": "pl-PL", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
