@@ -9,7 +9,9 @@ template: ``(a|b|c)`` word-choice groups (including a trailing
 tokens are kept or dropped, an ``<alias>`` token is replaced by one
 line from that locale's own ``alias.voc``, and a ``{slot}`` token is
 replaced by one value from that locale's own ``slot.entity``. No
-translation, no drafted prose.
+translation, no drafted prose. Rows flagged ``needs_manual`` (machine
+generated, no native speaker vouched for them) run and assert like
+every other row.
 
 Mirrors this repo's own ``test_intents_en_us.py``: the skill refuses to
 load off a physical Mark 1 (I2C probe), so ``ovos_i2c_detection.is_mark_1``
@@ -63,18 +65,12 @@ NEGATIVE_UTTERANCES = [
 def _load_rows(lang):
     path = END2END_DIR / f"golden_utterances_{lang}.jsonl"
     rows = []
-    needs_manual = 0
     with open(path, encoding="utf-8") as f:
         for line in f:
             line = line.strip()
-            if not line:
-                continue
-            row = json.loads(line)
-            if row.get("needs_manual"):
-                needs_manual += 1
-                continue
-            rows.append(row)
-    assert rows or needs_manual, f"{lang}: no golden rows"
+            if line:
+                rows.append(json.loads(line))
+    assert rows, f"{lang}: no golden rows"
     return rows
 
 
@@ -158,3 +154,10 @@ del _lang, _cls  # for-loop variables leak into module globals; without this
 # deletion pytest also collects a spurious extra test class literally named
 # "_cls" (bound to whichever locale ran last), which boots a second,
 # redundant MiniCroft for that locale under a different collected name.
+
+
+def test_every_shipping_locale_has_a_golden_file():
+    golden = {p.stem.split("_", 2)[2] for p in END2END_DIR.glob("golden_utterances_*.jsonl")}
+    locale_root = END2END_DIR.parents[1] / "locale"
+    shipping = {d.name for d in locale_root.iterdir() if d.is_dir() and any(d.rglob("*.intent"))}
+    assert golden == shipping, f"golden files {sorted(golden ^ shipping)} differ from shipping locales"

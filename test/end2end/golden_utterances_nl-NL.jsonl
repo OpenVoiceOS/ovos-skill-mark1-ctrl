@@ -48,3 +48,4 @@
 {"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "verander de oog helderheid niveau", "lang": "nl-NL", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false}
 {"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "verander de oog helderheid niveau naar 20 procent", "lang": "nl-NL", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false}
 {"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "verander naar 20 procent oog helderheid", "lang": "nl-NL", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "stel op aangepaste oogkleur", "lang": "nl-NL", "intent_label": "custom_eye_color", "intent_type": "padatious", "needs_manual": true, "machine_generated": true}
