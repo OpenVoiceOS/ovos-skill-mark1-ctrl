@@ -1,8 +1,14 @@
-<look> prawą [<enclosure>]
-prawą <look> [<enclosure>]
-Możesz to zrobić? <look> prawą
-Proszę, proszę. <look> prawą
+<look> w prawo [<enclosure>]
+w prawo <look> [<enclosure>]
+czy możesz spojrzeć w prawo
+proszę, <look> w prawo
 <look> po prawej [<enclosure>]
-<look> Po prawej stronie
-Obróć się <eyes> prawą
-Ukierunkowaj na swoje punkty <eyes> po prawej
+<look> na prawą stronę
+skieruj <eyes> w prawo
+skieruj swoje <eyes> na prawą stronę
+# machine-translated (linguonnx, unreviewed)
+możesz "popatrz" w prawo
+/Proszę, /popatrz w prawo
+/Popatrz /po prawej stronie
+obróć <eyes> w prawo
+wskakuj po prawej

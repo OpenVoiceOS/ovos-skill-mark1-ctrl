@@ -8,3 +8,6 @@ hazme un parpadeo
 haz la animación de parpadeo
 parpadea con los dos <eyes>
 parpadea con el ojo de la {direction}
+# machine-translated (linguonnx, unreviewed)
+dame un parpadeo
+guiño con el ojo {direction}

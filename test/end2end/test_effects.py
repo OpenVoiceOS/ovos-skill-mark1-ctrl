@@ -1,12 +1,10 @@
 """Effect assertions for ovos-skill-mark1-ctrl's eye-color and brightness intents.
 
 ``test_intents_en_us.py``, ``test_golden_utterances.py`` and
-``test_entity_constraints.py`` all assert routing only: the golden suite's
-``_IGNORE`` list explicitly drops every ``enclosure.eyes.*`` message before
-asserting, and the routing test asserts only the routed intent's slot data,
-never the enclosure command the handler is supposed to send. A handler that
-routes, fills the slot correctly, and then never talks to the enclosure
-passes all three suites unchanged.
+``test_entity_constraints.py`` assert routing only: they check the routed
+intent and its slot data, never the enclosure command the handler is
+supposed to send. A handler that routes, fills the slot correctly, and then
+never talks to the enclosure passes all three suites unchanged.
 
 This asserts the specific enclosure bus message and its payload for both
 intents, with the expected RGB/level values computed independently (via
@@ -32,10 +30,7 @@ from ovoscope import CaptureSession, get_minicroft  # noqa: E402
 SKILL_ID = "ovos-skill-mark1-ctrl.openvoiceos"
 LANG = "en-US"
 
-_PIPELINE = [
-    "ovos-padatious-pipeline-plugin-high",
-    "ovos-padatious-pipeline-plugin-medium",
-]
+_PIPELINE = ["ovos-padacioso-pipeline-plugin"]
 
 
 class TestMark1CtrlEffects(unittest.TestCase):

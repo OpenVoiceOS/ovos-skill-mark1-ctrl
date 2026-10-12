@@ -7,9 +7,13 @@ Ustawić oko na coś {color}
 zmienić oczy na coś {color}
 Ustawić oczy na coś {color}
 zmiana koloru oka
-kolor ustawienia oczu
+ustaw kolor oczu
 zmiana koloru oczu
-Obróć się <eyes> {color}
-Chcę twojego <eyes> aby być {color}
+zmień <eyes> na {color}
+chcę, żeby twoje <eyes> były {color}
 Możesz zrobić swoje <eyes> {color}
 pomaluj <eyes> {color}
+# machine-translated (linguonnx, unreviewed)
+(zmiana|zestaw) [CZĘŚĆ 2|twojego] (oka|oczy) [kolor|kolory] do czegoś {color}
+(zmiana|zestaw) [CZĘŚĆ 2|twojego] (oka|oczy) (kolor|kolory)
+możesz zrobić swoje "oki" {color}

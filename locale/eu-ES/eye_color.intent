@@ -7,3 +7,5 @@ margotu begiak {color}
 aldatu begiak {color} kolorera
 eman begiei {color} kolorea
 begiak {color} izatea nahi dut
+# machine-translated (linguonnx, unreviewed)
+(aldatu|set) [hau da:|zure] (begi|begiak) [kolore|koloreak] zerbaiten bila {color}

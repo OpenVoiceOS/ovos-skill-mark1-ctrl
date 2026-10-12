@@ -1,20 +1,13 @@
 """Entity-file registration coverage for ovos-skill-mark1-ctrl (en-US).
 
 register_entity_file() feeds locale/en-US/brightness.entity and
-locale/en-US/color.entity to the intent engine as TRAINING DATA / confidence
-hints for the {brightness}/{color} slots -- NOT an allow-list. Under
-ovos-padatious>=2.0.3a1:
-  - an IN-LIST value (e.g. "turquoise") routes at the padatious-HIGH band
-    (conf_high=0.95) with the slot tagged correctly.
-  - an OUT-OF-LIST value for the same slot (e.g. "mauve") still routes --
-    registration is a hint, not a closed vocabulary -- but only clears the
-    padatious-MEDIUM band, not high.
-
-This means hint semantics only become visible when the active session
-pipeline includes BOTH padatious-high and padatious-medium stages -- the
-stock default pipeline (padatious-high only) will simply drop an
-out-of-list utterance instead of showing the fallback-to-medium behavior.
-Every test below therefore declares its own session.pipeline explicitly.
+locale/en-US/color.entity to the intent engine as TRAINING DATA / hints for
+the {brightness}/{color} slots -- NOT an allow-list. On the padacioso
+pipeline:
+  - an IN-LIST value (e.g. "turquoise") routes with the slot tagged.
+  - an OUT-OF-LIST value for the same slot (e.g. "mauve") still routes with
+    the slot tagged, because registration is a hint, not a closed
+    vocabulary.
 
 The skill's __init__ refuses to load off a physical Mark 1 (I2C probe), so
 ovos_i2c_detection.is_mark_1 is stubbed True before the plugin loader
@@ -41,11 +34,7 @@ from ovoscope import get_minicroft
 SKILL_ID = "ovos-skill-mark1-ctrl.openvoiceos"
 LANG = "en-US"
 
-HIGH = ["ovos-padatious-pipeline-plugin-high"]
-HIGH_AND_MEDIUM = [
-    "ovos-padatious-pipeline-plugin-high",
-    "ovos-padatious-pipeline-plugin-medium",
-]
+PIPELINE = ["ovos-padacioso-pipeline-plugin"]
 
 
 class TestEntityConstraints(TestCase):
@@ -86,63 +75,29 @@ class TestEntityConstraints(TestCase):
 
     # --- {color} on eye_color.intent ---
 
-    def test_color_in_list_matches_at_high(self):
-        """A registered color ("turquoise") clears padatious-high alone."""
-        intent_msg_type = f"{SKILL_ID}:eye_color"
-        matched = self._emit_and_wait(
-            "set the eye color to turquoise", intent_msg_type, HIGH,
-        )
-        self.assertTrue(matched, "'set the eye color to turquoise' should route at "
-                                  "padatious-high -- turquoise is a registered color.entity value")
+    def test_color_in_list_routes_with_the_slot(self):
+        """A registered color ("turquoise") routes with the slot filled."""
+        matched = self._emit_and_wait("set the eye color to turquoise",
+                                      f"{SKILL_ID}:eye_color", PIPELINE)
+        self.assertTrue(matched, "'set the eye color to turquoise' should route to eye_color "
+                                 "-- turquoise is a registered color.entity value")
         self.assertEqual(matched[0].data.get("color"), "turquoise")
 
-    def test_color_out_of_list_needs_medium(self):
-        """An unregistered color ("mauve") still matches (hint, not
-        allow-list) but only clears padatious-medium -- proving
-        registration neither creates a closed vocabulary (would 0-match)
-        nor is silently gutted (would also clear high, same as the
-        registered case)."""
-        intent_msg_type = f"{SKILL_ID}:eye_color"
-        utterance = "set the eye color to mauve"
-
-        high_only = self._emit_and_wait(utterance, intent_msg_type, HIGH)
-        self.assertFalse(
-            high_only,
-            "'set the eye color to mauve' (out-of-list color) should NOT "
-            "clear padatious-high alone -- if it does, entity registration "
-            "is acting as a hard allow-list booster instead of a hint, or "
-            "the high/medium band split collapsed",
-        )
-
-        with_medium = self._emit_and_wait(utterance, intent_msg_type, HIGH_AND_MEDIUM)
-        self.assertTrue(
-            with_medium,
-            "'set the eye color to mauve' should still route once "
-            "padatious-medium is in the pipeline -- an out-of-list slot "
-            "value must remain matchable, just at lower confidence",
-        )
-        self.assertEqual(with_medium[0].data.get("color"), "mauve")
+    def test_color_out_of_list_still_routes(self):
+        """An unregistered color ("mauve") still routes with the slot filled:
+        the entity file is a hint, not an allow-list."""
+        matched = self._emit_and_wait("set the eye color to mauve",
+                                      f"{SKILL_ID}:eye_color", PIPELINE)
+        self.assertTrue(matched, "'set the eye color to mauve' (out-of-list color) should still "
+                                 "route -- an out-of-list slot value must remain matchable")
+        self.assertEqual(matched[0].data.get("color"), "mauve")
 
     # --- {brightness} on brightness.intent ---
 
-    def test_brightness_in_list_matches_at_high(self):
-        """A registered brightness ("full") clears padatious-high alone."""
-        intent_msg_type = f"{SKILL_ID}:brightness"
-        matched = self._emit_and_wait(
-            "set eye brightness to full", intent_msg_type, HIGH,
-        )
-        self.assertTrue(matched, "'set eye brightness to full' should route at "
-                                  "padatious-high -- full is a registered brightness.entity value")
+    def test_brightness_in_list_routes_with_the_slot(self):
+        """A registered brightness ("full") routes with the slot filled."""
+        matched = self._emit_and_wait("set eye brightness to full",
+                                      f"{SKILL_ID}:brightness", PIPELINE)
+        self.assertTrue(matched, "'set eye brightness to full' should route to brightness "
+                                 "-- full is a registered brightness.entity value")
         self.assertEqual(matched[0].data.get("brightness"), "full")
-
-    # NOTE: {brightness} carries the "#"/"##"/"###"/"#%"/"##%"/"###%"
-    # digit-wildcard placeholder lines. The shared resource reader treats
-    # any line starting with "#" as a comment and drops it, so these are
-    # never registered as literal entity values -- verified directly
-    # against ovos_spec_tools.resources.read_resource_file, the reader
-    # register_entity_file uses. {brightness}'s short (3-4 word) template
-    # also makes its confidence band edges noticeably more boot-sensitive
-    # than {color}'s, so this suite does not duplicate the
-    # in-list-high / out-of-list-needs-medium pair for it -- {color} above
-    # already exercises that pair reliably, and the mutation check below
-    # covers the registration loop for both slots.

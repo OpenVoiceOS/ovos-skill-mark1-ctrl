@@ -8,3 +8,9 @@ fais-moi un clignement
 lance l'animation de clignement
 cligne des deux <eyes>
 cligne de l'œil à {direction}
+# machine-translated (linguonnx, unreviewed)
+pouvez-vous cligner un clin d'œil
+s'il vous plaît clignez un clin d'oeil
+donne-moi un clin d'œil
+faites un clin d'œil [<animation>]
+clin d'oeil avec l'œil {direction}

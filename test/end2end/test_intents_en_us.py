@@ -1,7 +1,7 @@
 """End-to-end intent-routing tests for ovos-skill-mark1-ctrl (en-US).
 
 Each case boots an in-process MiniCroft with the skill loaded and feeds a real
-utterance through the padatious pipeline, asserting where it routes and how the
+utterance through the padacioso pipeline, asserting where it routes and how the
 ``{color}`` / ``{brightness}`` slots are filled.
 
 The skill's ``__init__`` refuses to load off a physical Mark 1 (I2C probe), so
@@ -33,16 +33,11 @@ from ovoscope import get_minicroft
 SKILL_ID = "ovos-skill-mark1-ctrl.openvoiceos"
 LANG = "en-US"
 
-# Exact expansions score conf 1.0 (the -high band); the slot-filled variants
-# land lower, so register both padatious bands.
-PIPELINE = [
-    "ovos-padatious-pipeline-plugin-high",
-    "ovos-padatious-pipeline-plugin-medium",
-]
+PIPELINE = ["ovos-padacioso-pipeline-plugin"]
 
 
 class _RoutingTest(TestCase):
-    """Shared MiniCroft harness for padatious intent routing."""
+    """Shared MiniCroft harness for padacioso intent routing."""
 
     @classmethod
     def setUpClass(cls):
@@ -81,7 +76,7 @@ class _RoutingTest(TestCase):
 
 
 class TestIntentRouting(_RoutingTest):
-    """Padatious routing for the eye-colour and brightness intents."""
+    """Padacioso routing for the eye-colour and brightness intents."""
 
     def test_set_the_eye_color_to_red(self):
         routed = self._run("set the eye color to red", "eye_color")
