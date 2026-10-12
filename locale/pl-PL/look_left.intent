@@ -1,8 +1,13 @@
 <look> w lewo [<enclosure>]
 w lewo <look> [<enclosure>]
-Możesz to zrobić? <look> w lewo
-Proszę, proszę. <look> w lewo
+czy możesz spojrzeć w lewo
+proszę, <look> w lewo
 <look> po lewej [<enclosure>]
 <look> po lewej
-Obróć się <eyes> w lewo
-Ukierunkowaj na swoje punkty <eyes> po lewej
+skieruj <eyes> w lewo
+skieruj swoje <eyes> na lewą stronę
+# machine-translated (linguonnx, unreviewed)
+możesz "popatrz w lewo"
+/Proszę, /popatrz w lewo
+/Popatrz po lewej
+obróć <eyes> w lewo
