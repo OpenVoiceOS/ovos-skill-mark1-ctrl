@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.10.1a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.10.1a1) (2026-10-23)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.10.0a2...0.10.1a1)
+
+**Merged pull requests:**
+
+- fix\(locale\): drop dead vocabulary files [\#96](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/96) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.10.0a2](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.10.0a2) (2026-10-01)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.10.0a1...0.10.0a2)
