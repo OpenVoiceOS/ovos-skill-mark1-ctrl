@@ -1,0 +1,51 @@
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "κοίτα προς τα δεξιά περίβλημα", "lang": "el-GR", "intent_label": "look_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "κοίτα δεξιά περίβλημα", "lang": "el-GR", "intent_label": "look_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "δεξιά κοίτα περίβλημα", "lang": "el-GR", "intent_label": "look_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "κοίτα προς τα αριστερά περίβλημα", "lang": "el-GR", "intent_label": "look_left", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "κοίτα αριστερά περίβλημα", "lang": "el-GR", "intent_label": "look_left", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "αριστερά κοίτα περίβλημα", "lang": "el-GR", "intent_label": "look_left", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "κοίτα προς τα πάνω περίβλημα", "lang": "el-GR", "intent_label": "look_up", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "κοίτα πάνω περίβλημα", "lang": "el-GR", "intent_label": "look_up", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "πάνω κοίτα περίβλημα", "lang": "el-GR", "intent_label": "look_up", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "κοίτα προς τα κάτω περίβλημα", "lang": "el-GR", "intent_label": "look_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "κοίτα κάτω περίβλημα", "lang": "el-GR", "intent_label": "look_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "κάτω κοίτα περίβλημα", "lang": "el-GR", "intent_label": "look_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "κοίτα πάνω και κάτω κίνηση περίβλημα", "lang": "el-GR", "intent_label": "look_up_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "κάτω πάνω κοίτα κίνηση περίβλημα", "lang": "el-GR", "intent_label": "look_up_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "στρέψε τα μάτια πάνω και κάτω", "lang": "el-GR", "intent_label": "look_up_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "κοίτα αριστερά και δεξιά κίνηση περίβλημα", "lang": "el-GR", "intent_label": "look_left_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "κοίτα από τη μια πλευρά στην άλλη κίνηση περίβλημα", "lang": "el-GR", "intent_label": "look_left_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "αριστερά δεξιά κοίτα κίνηση περίβλημα", "lang": "el-GR", "intent_label": "look_left_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "ανοιγόκλεισε τα μάτια κίνηση περίβλημα", "lang": "el-GR", "intent_label": "blink", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "κάνε ένα ανοιγόκλειμα ματιών περίβλημα", "lang": "el-GR", "intent_label": "blink", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "ανοιγόκλεισε τα μάτι περίβλημα", "lang": "el-GR", "intent_label": "blink", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "στριφογύρνα τα μάτι περίβλημα", "lang": "el-GR", "intent_label": "spin", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "κάνε τα μάτι να στριφογυρίζουν περίβλημα", "lang": "el-GR", "intent_label": "spin", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "περιέστρεψε τα μάτι περίβλημα", "lang": "el-GR", "intent_label": "spin", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "στένεψε τα μάτι περίβλημα", "lang": "el-GR", "intent_label": "narrow_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "κάνε τα μάτι στενά περίβλημα", "lang": "el-GR", "intent_label": "narrow_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "μισόκλεισε τα μάτι περίβλημα", "lang": "el-GR", "intent_label": "narrow_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "επαναφορά περίβλημα", "lang": "el-GR", "intent_label": "reset", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "περίβλημα επαναφορά", "lang": "el-GR", "intent_label": "reset", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "γύρνα τα όλα στην αρχική κατάσταση περίβλημα", "lang": "el-GR", "intent_label": "reset", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "χαμογέλασε κίνηση με το στόμα περίβλημα", "lang": "el-GR", "intent_label": "smile", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "κάνε ένα χαμόγελο περίβλημα", "lang": "el-GR", "intent_label": "smile", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "βάλε χαμογελαστό πρόσωπο περίβλημα", "lang": "el-GR", "intent_label": "smile", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "άκουσε κίνηση με το στόμα περίβλημα", "lang": "el-GR", "intent_label": "listen", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "ξεκίνα να άκουσε περίβλημα", "lang": "el-GR", "intent_label": "listen", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "ενεργοποίησε την κίνηση ακρόασης περίβλημα", "lang": "el-GR", "intent_label": "listen", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "σκέψου κίνηση με το στόμα περίβλημα", "lang": "el-GR", "intent_label": "think", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "ξεκίνα να σκέψου περίβλημα", "lang": "el-GR", "intent_label": "think", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "ενεργοποίησε την κίνηση σκέψης περίβλημα", "lang": "el-GR", "intent_label": "think", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "κάνε τρελά μάτι κίνηση περίβλημα", "lang": "el-GR", "intent_label": "crazy_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "βάλε τρελά μάτια περίβλημα", "lang": "el-GR", "intent_label": "crazy_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "δείξε παλαβά μάτια κίνηση περίβλημα", "lang": "el-GR", "intent_label": "crazy_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "όρισε σε προσαρμοσμένο το χρώμα ματιών", "lang": "el-GR", "intent_label": "custom_eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "όρισε προσαρμοσμένο χρώμα ματιών", "lang": "el-GR", "intent_label": "custom_eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "άλλαξε σε προσαρμοσμένο το ματιών", "lang": "el-GR", "intent_label": "custom_eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "άλλαξε το μάτι σου σε ένα προκαθορισμένο χρώμα", "lang": "el-GR", "intent_label": "eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "άλλαξε το χρώμα στο μάτι", "lang": "el-GR", "intent_label": "eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "άλλαξε το χρώμα ματιών σε προκαθορισμένο", "lang": "el-GR", "intent_label": "eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "άλλαξε στο 20 τοις εκατό την φωτεινότητα στο μάτι", "lang": "el-GR", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "άλλαξε το επίπεδο της φωτεινότητας στο μάτι στο 20 τοις εκατό", "lang": "el-GR", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "χαμήλωσε την φωτεινότητα στο 20 τοις εκατό", "lang": "el-GR", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false}

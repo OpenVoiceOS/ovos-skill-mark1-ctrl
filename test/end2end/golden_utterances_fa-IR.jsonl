@@ -1,0 +1,3 @@
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "نگاهی پایین", "lang": "fa-IR", "intent_label": "look_down", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "تغییر چشم به آبی", "lang": "fa-IR", "intent_label": "eye_color", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "روشنایی را به ۵۰", "lang": "fa-IR", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
