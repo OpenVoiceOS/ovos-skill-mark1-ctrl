@@ -29,7 +29,7 @@
 {"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "enclosure back to default", "lang": "en-US", "intent_label": "reset", "intent_type": "padatious", "needs_manual": false}
 {"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "back to defaults", "lang": "en-US", "intent_label": "reset", "intent_type": "padatious", "needs_manual": false}
 {"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "smile animation mouth enclosure", "lang": "en-US", "intent_label": "smile", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "smmiling", "lang": "en-US", "intent_label": "smile", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "smiling", "lang": "en-US", "intent_label": "smile", "intent_type": "padatious", "needs_manual": false}
 {"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "smile animation mouth mark one", "lang": "en-US", "intent_label": "smile", "intent_type": "padatious", "needs_manual": false}
 {"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "listen animation mouth enclosure", "lang": "en-US", "intent_label": "listen", "intent_type": "padatious", "needs_manual": false}
 {"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "listening", "lang": "en-US", "intent_label": "listen", "intent_type": "padatious", "needs_manual": false}

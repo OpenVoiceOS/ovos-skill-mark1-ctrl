@@ -1,15 +1,15 @@
-przemień oko na {color}
-ustawić oko na {color}
-zmienić oczy na {color}
-ustawić oczy do {color}
-Zmienić oko na coś {color}
-Ustawić oko na coś {color}
-zmienić oczy na coś {color}
-Ustawić oczy na coś {color}
+przemień oko na {color:color}
+ustawić oko na {color:color}
+zmienić oczy na {color:color}
+ustawić oczy do {color:color}
+Zmienić oko na coś {color:color}
+Ustawić oko na coś {color:color}
+zmienić oczy na coś {color:color}
+Ustawić oczy na coś {color:color}
 zmiana koloru oka
-kolor ustawienia oczu
+ustaw kolor oczu
 zmiana koloru oczu
-Obróć się <eyes> {color}
-Chcę twojego <eyes> aby być {color}
-Możesz zrobić swoje <eyes> {color}
-pomaluj <eyes> {color}
+zmień <eyes> na {color:color}
+chcę, żeby twoje <eyes> były {color:color}
+Możesz zrobić swoje <eyes> {color:color}
+pomaluj <eyes> {color:color}

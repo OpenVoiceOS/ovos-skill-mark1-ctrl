@@ -1,11 +1,11 @@
 (changer|définir|fixé) (la couleur|les couleurs) des yeux
-(changer|définir|fixé) la couleur des yeux en {color}
-(changer|régler) (la|votre) couleur (d'yeux|des yeux) à {color}
-(changer|régler) la couleur (d'yeux|des yeux) à {color}
-(changer|régler) la couleur des yeux à une valeur {color}
-mets tes <eyes> en {color}
-je veux tes <eyes> en {color}
-peux-tu rendre tes <eyes> {color}
-peins tes <eyes> en {color}
-fais passer tes <eyes> au {color}
-donne à tes <eyes> une couleur {color}
+(changer|définir|fixé) la couleur des yeux en {color:color}
+(changer|régler) (la|votre) couleur (d'yeux|des yeux) à {color:color}
+(changer|régler) la couleur (d'yeux|des yeux) à {color:color}
+(changer|régler) la couleur des yeux à une valeur {color:color}
+mets tes <eyes> en {color:color}
+je veux tes <eyes> en {color:color}
+peux-tu rendre tes <eyes> {color:color}
+peins tes <eyes> en {color:color}
+fais passer tes <eyes> au {color:color}
+donne à tes <eyes> une couleur {color:color}
