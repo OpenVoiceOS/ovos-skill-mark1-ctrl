@@ -27,21 +27,17 @@ EnclosureControlSkill.get_response = lambda self, *a, **k: None
 
 from ovos_bus_client.message import Message  # noqa: E402
 from ovos_bus_client.session import Session  # noqa: E402
-from ovoscope import CaptureSession, get_minicroft  # noqa: E402
+from ovoscope import CaptureSession  # noqa: E402
+from ovoscope.routing import PIPELINE, TALLY, get_prototype_minicroft  # noqa: E402
 
 SKILL_ID = "ovos-skill-mark1-ctrl.openvoiceos"
 LANG = "en-US"
-
-_PIPELINE = [
-    "ovos-padatious-pipeline-plugin-high",
-    "ovos-padatious-pipeline-plugin-medium",
-]
 
 
 class TestMark1CtrlEffects(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.minicroft = get_minicroft([SKILL_ID])
+        cls.minicroft = get_prototype_minicroft([SKILL_ID], lang=LANG)
 
     @classmethod
     def tearDownClass(cls):
@@ -50,10 +46,10 @@ class TestMark1CtrlEffects(unittest.TestCase):
     def _session(self, session_id):
         session = Session(session_id)
         session.lang = LANG
-        session.pipeline = list(_PIPELINE)
+        session.pipeline = PIPELINE
         return session
 
-    def _fire(self, text, session_id):
+    def _fire(self, text, session_id, intent_name):
         session = self._session(session_id)
         utterance = Message(
             "recognizer_loop:utterance",
@@ -62,7 +58,10 @@ class TestMark1CtrlEffects(unittest.TestCase):
         )
         capture = CaptureSession(self.minicroft, ignore_messages=[])
         capture.capture(utterance, timeout=30)
-        return capture.finish()
+        messages = capture.finish()
+        TALLY.assert_routed(text, f"{SKILL_ID}:{intent_name}",
+                            [m.msg_type for m in messages])
+        return messages
 
     def test_set_eye_color_emits_enclosure_color_command(self):
         """The real effect of 'set the eye color to red' is telling the
@@ -71,7 +70,7 @@ class TestMark1CtrlEffects(unittest.TestCase):
         RGB triple 'red' independently resolves to via
         ovos_color_parser, not whatever the handler happened to emit."""
         expected = color_from_description("red")
-        messages = self._fire("set the eye color to red", "effects-eye-color")
+        messages = self._fire("set the eye color to red", "effects-eye-color", "eye_color")
 
         color_msgs = [m for m in messages if m.msg_type == "enclosure.eyes.color"]
         self.assertEqual(
@@ -90,7 +89,7 @@ class TestMark1CtrlEffects(unittest.TestCase):
         50% the user said -- the skill's own percent_to_level formula
         (level = percent / 100 * 30) computes 15 for 50%, matching what
         real Mark 1 hardware expects."""
-        messages = self._fire("set eye brightness to 50", "effects-brightness")
+        messages = self._fire("set eye brightness to 50", "effects-brightness", "brightness")
 
         level_msgs = [m for m in messages if m.msg_type == "enclosure.eyes.level"]
         self.assertEqual(
