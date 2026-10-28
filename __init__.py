@@ -1,7 +1,7 @@
 import random
 import time
 from ast import literal_eval as parse_tuple
-from ovos_color_parser import color_from_description, sRGBAColor
+from ovos_color_parser import extract_color_spans, sRGBAColor
 from ovos_utils import create_daemon, classproperty
 from ovos_utils.log import LOG
 from ovos_utils.process_utils import RuntimeRequirements
@@ -313,19 +313,26 @@ class EnclosureControlSkill(OVOSSkill):
             Args:
                 message (dict): messagebus message from intent parser
         """
+        # OVOS-INTENT-1 §5.6: the typed-slots transformer already read the
+        # colour. An engine that binds no slot value leaves only its entries.
+        typed = self.typed_slot(message, 'color')
+        if typed is None and not message.data.get('color'):
+            typed = next((entry["value"] for entry in self.typed_slots(message, 'color')), None)
+        if typed is not None:
+            default = self.ask_yesno('set_default_eye_color') == 'yes'
+            self.set_eye_color(rgb=_hex_to_rgb(typed["hex"]), make_default=default)
+            return
         color_str = (message.data.get('color', None) or
                      self.get_response('color_need'))
         if color_str:
-            # The user says the colour in their own language. The parser
-            # defaults to lang="en", so without this a German "blau" and a
-            # Swedish "blå" resolved to None and the skill spoke
-            # color_not_exist on an intent it had matched.
-            match = color_from_description(color_str, lang=self.lang)
-            if match is not None:
+            # The same name table the typed-slots transformer reads, in the
+            # session language, so both paths give one colour for one name.
+            spans = extract_color_spans(color_str, self.lang)
+            if spans:
                 default = False
                 if self.ask_yesno('set_default_eye_color') == 'yes':
                     default = True
-                self.set_eye_color(color=match, make_default=default)
+                self.set_eye_color(rgb=_hex_to_rgb(spans[0].hex), make_default=default)
             else:
                 self.speak_dialog('color_not_exist')
 

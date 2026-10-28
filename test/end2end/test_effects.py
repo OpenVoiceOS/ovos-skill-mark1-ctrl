@@ -10,8 +10,9 @@ passes all three suites unchanged.
 
 This asserts the specific enclosure bus message and its payload for both
 intents, with the expected RGB/level values computed independently (via
-``ovos_color_parser.color_from_description`` and the skill's own documented
-percent-to-level formula), never read back from the handler under test.
+``ovos_color_parser.extract_color_spans``, which the typed-slots transformer
+reads with, and the skill's own documented percent-to-level formula), never
+read back from the handler under test.
 """
 import unittest
 
@@ -19,7 +20,7 @@ import ovos_i2c_detection
 
 ovos_i2c_detection.is_mark_1 = lambda: True
 
-from ovos_color_parser import color_from_description  # noqa: E402
+from ovos_color_parser import extract_color_spans  # noqa: E402
 from ovos_skill_mark1_ctrl import EnclosureControlSkill  # noqa: E402
 
 EnclosureControlSkill.ask_yesno = lambda self, *a, **k: "no"
@@ -67,10 +68,12 @@ class TestMark1CtrlEffects(unittest.TestCase):
         """The real effect of 'set the eye color to red' is telling the
         Mark 1 enclosure to change its eye colour -- assert the
         enclosure.eyes.color message and its r/g/b payload, matching the
-        RGB triple 'red' independently resolves to via
+        hex the typed-slots transformer reads for 'red' through
         ovos_color_parser, not whatever the handler happened to emit."""
-        expected = color_from_description("red")
-        messages = self._fire("set the eye color to red", "effects-eye-color", "eye_color")
+        utterance = "set the eye color to red"
+        hex_value = extract_color_spans(utterance, "en-US")[0].hex.lstrip("#")
+        expected = tuple(int(hex_value[i:i + 2], 16) for i in (0, 2, 4))
+        messages = self._fire(utterance, "effects-eye-color", "eye_color")
 
         color_msgs = [m for m in messages if m.msg_type == "enclosure.eyes.color"]
         self.assertEqual(
@@ -79,7 +82,7 @@ class TestMark1CtrlEffects(unittest.TestCase):
         )
         self.assertEqual(
             (color_msgs[0].data.get("r"), color_msgs[0].data.get("g"), color_msgs[0].data.get("b")),
-            (expected.r, expected.g, expected.b),
+            expected,
             "enclosure.eyes.color payload did not carry the RGB triple for 'red'",
         )
 

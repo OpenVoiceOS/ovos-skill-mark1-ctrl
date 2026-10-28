@@ -1,10 +1,8 @@
 """A colour said in the session language must resolve.
 
-`handle_eye_color` called `color_from_description(color_str)`. The parser's
-signature is `color_from_description(description, lang="en", ...)`, so every
-locale's colour was read as English: the intent matched, the parser answered
-`None`, and the skill spoke `color_not_exist`. That is the defect the
-`{direction}` slot lost in this same branch, one function away.
+The colour parser defaults to `lang="en"`. A call that leaves out the
+session language reads every locale's colour as English: the intent
+matches, the parser answers nothing, and the skill speaks `color_not_exist`.
 
 This file drives the handler and reads back the colour the eyes were set
 to, because a call site is what the user meets.
@@ -19,7 +17,7 @@ import unittest
 from unittest.mock import Mock, patch
 
 from ovos_bus_client.message import Message
-from ovos_color_parser import color_from_description
+from ovos_color_parser import extract_color_spans
 from ovos_utils.messagebus import FakeBus
 
 SKILL_ID = "ovos-skill-mark1-ctrl.openvoiceos"
@@ -42,7 +40,7 @@ class TestEyeColourReadsTheSessionLanguage(unittest.TestCase):
             self.skill.handle_eye_color(
                 Message("test", {"color": colour, "lang": lang}, {"lang": lang}))
         if set_eye_color.called:
-            return set_eye_color.call_args.kwargs["color"]
+            return set_eye_color.call_args.kwargs["rgb"]
         self.assertTrue(
             speak_dialog.called,
             "the handler neither set a colour nor spoke: it answered nothing")
@@ -67,7 +65,7 @@ class TestEyeColourReadsTheSessionLanguage(unittest.TestCase):
         # not the call site passes one.
         for word in ("blau", "blå", "blauw"):
             with self.subTest(word=word):
-                self.assertIsNone(color_from_description(word))
+                self.assertEqual(extract_color_spans(word), [])
 
     def test_a_word_that_is_no_colour_speaks_instead_of_setting(self):
         self.assertIsNone(self._set_colour("dishwasher", "en-US"))
