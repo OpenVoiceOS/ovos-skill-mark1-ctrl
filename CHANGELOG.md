@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.10.1a2](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.10.1a2) (2026-10-28)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.10.1a1...0.10.1a2)
+
+**Merged pull requests:**
+
+- test: run the end2end suite on the m2v prototype pipeline [\#98](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/98) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.10.1a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.10.1a1) (2026-10-23)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.10.0a2...0.10.1a1)
