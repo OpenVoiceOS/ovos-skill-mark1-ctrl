@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.10.2a2](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.10.2a2) (2026-10-30)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.10.2a1...0.10.2a2)
+
+**Merged pull requests:**
+
+- test: derive the eye colour expectation from the typed-slots transformer [\#102](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/102) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.10.2a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.10.2a1) (2026-10-28)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.10.1a2...0.10.2a1)
