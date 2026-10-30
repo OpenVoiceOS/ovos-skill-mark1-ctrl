@@ -18,6 +18,8 @@ import unittest
 from unittest.mock import Mock, patch
 
 from ovos_bus_client.message import Message
+from ovos_bus_client.session import Session
+from ovos_typed_slots_transformer import TypedSlotsTransformer
 from ovos_utils.messagebus import FakeBus
 
 SKILL_ID = "ovos-skill-mark1-ctrl.openvoiceos"
@@ -55,7 +57,11 @@ class TestEyeColourReadsTheTypedSlot(unittest.TestCase):
                          (0x47, 0x57, 0x6f))
 
     def test_without_a_map_the_slot_text_gives_the_typed_colour(self):
-        self.assertEqual(self._eyes({"color": "dark blue"}), (0x47, 0x57, 0x6f))
+        typed = TypedSlotsTransformer().transform(
+            [UTTERANCE], frozenset({"color"}), Session(lang="en-US"))
+        hex_code = typed["color"][0]["value"]["hex"]
+        rgb = tuple(int(hex_code[i:i + 2], 16) for i in (1, 3, 5))
+        self.assertEqual(self._eyes({"color": "dark blue"}), rgb)
 
     def test_without_a_map_a_basic_colour_is_the_pure_colour(self):
         self.assertEqual(self._eyes({"color": "red"}), (255, 0, 0))
