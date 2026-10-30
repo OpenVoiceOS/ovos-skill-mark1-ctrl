@@ -1,9 +1,0 @@
-# name, percentage
-# NOTE: Add to vocab/xx-xx/brightness.entity, also
-full,100
-ljus,75
-halv,50
-svag,25
-låg,10
-auto,-1
-automatiskt,-1
