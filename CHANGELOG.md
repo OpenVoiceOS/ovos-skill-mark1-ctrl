@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.10.3a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.10.3a1) (2026-10-30)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.10.2a2...0.10.3a1)
+
+**Merged pull requests:**
+
+- fix\(locale\): remove unused brightness\_levels.value files [\#101](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/101) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.10.2a2](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.10.2a2) (2026-10-30)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.10.2a1...0.10.2a2)
