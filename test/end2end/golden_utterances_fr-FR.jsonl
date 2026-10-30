@@ -1,0 +1,51 @@
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "oriente les yeux vers la droite boîtier", "lang": "fr-FR", "intent_label": "look_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "regarde vers la droite boîtier", "lang": "fr-FR", "intent_label": "look_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "à droite oriente les yeux boîtier", "lang": "fr-FR", "intent_label": "look_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "oriente les yeux vers la gauche boîtier", "lang": "fr-FR", "intent_label": "look_left", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "regarde vers la gauche boîtier", "lang": "fr-FR", "intent_label": "look_left", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "à gauche oriente les yeux boîtier", "lang": "fr-FR", "intent_label": "look_left", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "oriente les yeux vers le haut boîtier", "lang": "fr-FR", "intent_label": "look_up", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "regarde vers le haut boîtier", "lang": "fr-FR", "intent_label": "look_up", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "en haut oriente les yeux boîtier", "lang": "fr-FR", "intent_label": "look_up", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "oriente les yeux vers le bas boîtier", "lang": "fr-FR", "intent_label": "look_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "regarde vers le bas boîtier", "lang": "fr-FR", "intent_label": "look_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "en bas oriente les yeux boîtier", "lang": "fr-FR", "intent_label": "look_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "oriente les yeux en haut et en bas animation boîtier", "lang": "fr-FR", "intent_label": "look_up_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "regarde en haut et en bas animation boîtier", "lang": "fr-FR", "intent_label": "look_up_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "bas haut oriente les yeux animation boîtier", "lang": "fr-FR", "intent_label": "look_up_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "oriente les yeux à gauche et à droite animation boîtier", "lang": "fr-FR", "intent_label": "look_left_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "regarde d'un côté à l'autre animation boîtier", "lang": "fr-FR", "intent_label": "look_left_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "gauche droite oriente les yeux animation boîtier", "lang": "fr-FR", "intent_label": "look_left_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "cligne animation boîtier", "lang": "fr-FR", "intent_label": "blink", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "fais un clignement boîtier", "lang": "fr-FR", "intent_label": "blink", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "cligne des yeux boîtier", "lang": "fr-FR", "intent_label": "blink", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "fais tourner les yeux boîtier", "lang": "fr-FR", "intent_label": "spin", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "fais pivoter les yeux boîtier", "lang": "fr-FR", "intent_label": "spin", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "pivote les œil", "lang": "fr-FR", "intent_label": "spin", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "plisse les yeux boîtier", "lang": "fr-FR", "intent_label": "narrow_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "fais des yeux plissés boîtier", "lang": "fr-FR", "intent_label": "narrow_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "yeux plissés boîtier", "lang": "fr-FR", "intent_label": "narrow_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "remets par défaut boîtier", "lang": "fr-FR", "intent_label": "reset", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "boîtier remets par défaut", "lang": "fr-FR", "intent_label": "reset", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "remets tout à zéro boîtier", "lang": "fr-FR", "intent_label": "reset", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "sourire animation avec la bouche boîtier", "lang": "fr-FR", "intent_label": "smile", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "fais un sourire boîtier", "lang": "fr-FR", "intent_label": "smile", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "affiche un visage souriant boîtier", "lang": "fr-FR", "intent_label": "smile", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "écoute animation avec la bouche boîtier", "lang": "fr-FR", "intent_label": "listen", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "mets-toi à écoute boîtier", "lang": "fr-FR", "intent_label": "listen", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "active l'animation d'écoute boîtier", "lang": "fr-FR", "intent_label": "listen", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "réfléchir animation avec la bouche boîtier", "lang": "fr-FR", "intent_label": "think", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "mets-toi à réfléchir boîtier", "lang": "fr-FR", "intent_label": "think", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "active l'animation de réflexion boîtier", "lang": "fr-FR", "intent_label": "think", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "fais des yeux de fou animation boîtier", "lang": "fr-FR", "intent_label": "crazy_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "mets des yeux folles boîtier", "lang": "fr-FR", "intent_label": "crazy_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "montre des yeux délirants animation boîtier", "lang": "fr-FR", "intent_label": "crazy_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "régler sur une couleur des yeux personnalisée", "lang": "fr-FR", "intent_label": "custom_eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "Personnalise les yeux en couleur", "lang": "fr-FR", "intent_label": "custom_eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "modifier sur une couleur des yeux personnalisée", "lang": "fr-FR", "intent_label": "custom_eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "changer la couleur des yeux", "lang": "fr-FR", "intent_label": "eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "changer la couleur des yeux en Par défaut", "lang": "fr-FR", "intent_label": "eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "changer la couleur d'yeux à Par défaut", "lang": "fr-FR", "intent_label": "eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "change la luminosité des yeux", "lang": "fr-FR", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "change la luminosité des yeux à 20 pour cent", "lang": "fr-FR", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "change à 20 pour cent la luminosité des yeux", "lang": "fr-FR", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false}

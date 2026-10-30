@@ -1,0 +1,51 @@
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "blicke nach rechts Gehäuse", "lang": "de-DE", "intent_label": "look_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "schau nach rechts Gehäuse", "lang": "de-DE", "intent_label": "look_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "rechts blicke Gehäuse", "lang": "de-DE", "intent_label": "look_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "blicke nach links Gehäuse", "lang": "de-DE", "intent_label": "look_left", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "schau nach links Gehäuse", "lang": "de-DE", "intent_label": "look_left", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "links blicke Gehäuse", "lang": "de-DE", "intent_label": "look_left", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "blicke nach oben Gehäuse", "lang": "de-DE", "intent_label": "look_up", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "schau nach oben Gehäuse", "lang": "de-DE", "intent_label": "look_up", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "hoch blicke Gehäuse", "lang": "de-DE", "intent_label": "look_up", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "blicke nach unten Gehäuse", "lang": "de-DE", "intent_label": "look_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "schau nach unten Gehäuse", "lang": "de-DE", "intent_label": "look_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "runter blicke Gehäuse", "lang": "de-DE", "intent_label": "look_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "blicke nach oben und unten Animation Gehäuse", "lang": "de-DE", "intent_label": "look_up_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "schau nach oben und unten Animation Gehäuse", "lang": "de-DE", "intent_label": "look_up_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "runter hoch blicke Animation Gehäuse", "lang": "de-DE", "intent_label": "look_up_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "blicke nach links und rechts Animation Gehäuse", "lang": "de-DE", "intent_label": "look_left_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "schau von einer Seite zur anderen Animation Gehäuse", "lang": "de-DE", "intent_label": "look_left_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "links rechts blicke Animation Gehäuse", "lang": "de-DE", "intent_label": "look_left_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "blinzle Animation Gehäuse", "lang": "de-DE", "intent_label": "blink", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "mach ein Blinzeln Gehäuse", "lang": "de-DE", "intent_label": "blink", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "blinzle mit den Auge Gehäuse", "lang": "de-DE", "intent_label": "blink", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "rolle die Auge Gehäuse", "lang": "de-DE", "intent_label": "spin", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "lass die Auge rotieren Gehäuse", "lang": "de-DE", "intent_label": "spin", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "dreh die Auge im Kreis Gehäuse", "lang": "de-DE", "intent_label": "spin", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "verenge die Auge Gehäuse", "lang": "de-DE", "intent_label": "narrow_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "mach schmale Auge Gehäuse", "lang": "de-DE", "intent_label": "narrow_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "kneif die Auge zusammen Gehäuse", "lang": "de-DE", "intent_label": "narrow_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "zurück zu den Standardeinstellungen Gehäuse", "lang": "de-DE", "intent_label": "reset", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "Gehäuse zurück zu den Standardeinstellungen", "lang": "de-DE", "intent_label": "reset", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "setz alles auf den Anfang zurück Gehäuse", "lang": "de-DE", "intent_label": "reset", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "Lächeln Animation mit dem Mund Gehäuse", "lang": "de-DE", "intent_label": "smile", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "mach ein Lächeln Gehäuse", "lang": "de-DE", "intent_label": "smile", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "setz ein lächelndes Gesicht auf Gehäuse", "lang": "de-DE", "intent_label": "smile", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "Hören Animation mit dem Mund Gehäuse", "lang": "de-DE", "intent_label": "listen", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "fang an zu Hören Gehäuse", "lang": "de-DE", "intent_label": "listen", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "aktiviere die Zuhör-Animation Gehäuse", "lang": "de-DE", "intent_label": "listen", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "Denken Animation mit dem Mund Gehäuse", "lang": "de-DE", "intent_label": "think", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "fang an zu Denken Gehäuse", "lang": "de-DE", "intent_label": "think", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "aktiviere die Denk-Animation Gehäuse", "lang": "de-DE", "intent_label": "think", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "mach verrückte Auge Animation Gehäuse", "lang": "de-DE", "intent_label": "crazy_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "zeig verrückte Augen Gehäuse", "lang": "de-DE", "intent_label": "crazy_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "setz wahnsinnige Auge auf Animation Gehäuse", "lang": "de-DE", "intent_label": "crazy_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "setze auf benutzerdefinierte Augenfarbe", "lang": "de-DE", "intent_label": "custom_eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "setze benutzerdefinierte Farbe", "lang": "de-DE", "intent_label": "custom_eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "ändere auf benutzerdefinierte Augenfarben", "lang": "de-DE", "intent_label": "custom_eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "ändere Auge Farbe auf Standardeinstellung", "lang": "de-DE", "intent_label": "eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "ändere Auge auf eine Standardeinstellung Farbe", "lang": "de-DE", "intent_label": "eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "ändere deine Augen in eine Standardeinstellung Farbe", "lang": "de-DE", "intent_label": "eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "ein wenig heller auf 20 Prozent", "lang": "de-DE", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "ändere die Augen Helligkeit Stufe", "lang": "de-DE", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "ändere die Augen Helligkeit Stufe auf 20 Prozent", "lang": "de-DE", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false}

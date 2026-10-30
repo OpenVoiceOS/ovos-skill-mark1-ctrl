@@ -1,0 +1,31 @@
+{
+  "skill_id": "ovos-skill-mark1-ctrl.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl",
+  "name": "Mark 1 Enclosure Control",
+  "description": "Control the Mycroft Mark 1 enclosure by voice.",
+  "examples": [
+    "seɣmeḍ allen",
+    "rnu tafeggagt",
+    "xdem allen imhewwlen",
+    "bɣiɣ yini n wallen udmawan",
+    "bɣiɣ allen kaki",
+    "bɣiɣ udem n usflid",
+    "ṣubb allen",
+    "wali ɣer uzelmaḍ",
+    "wali ɣer sin idisan",
+    "wali ɣer uyeffus",
+    "refd allen",
+    "wali ddaw d nnig",
+    "seddi allen-ik",
+    "eǧǧ kullec am zik",
+    "sken-d tadmert",
+    "zzi allen",
+    "bɣiɣ udem n uxemmem"
+  ],
+  "tags": [
+    "mark1",
+    "enclosure",
+    "eyes",
+    "system"
+  ]
+}
