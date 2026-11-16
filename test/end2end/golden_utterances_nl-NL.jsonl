@@ -1,0 +1,50 @@
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "kijk naar rechts enclosure", "lang": "nl-NL", "intent_label": "look_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "rechts kijk enclosure", "lang": "nl-NL", "intent_label": "look_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "richt je ogen naar rechts", "lang": "nl-NL", "intent_label": "look_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "kijk naar links enclosure", "lang": "nl-NL", "intent_label": "look_left", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "links kijk enclosure", "lang": "nl-NL", "intent_label": "look_left", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "richt je ogen naar links", "lang": "nl-NL", "intent_label": "look_left", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "kijk naar boven enclosure", "lang": "nl-NL", "intent_label": "look_up", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "kijk omhoog enclosure", "lang": "nl-NL", "intent_label": "look_up", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "omhoog kijk enclosure", "lang": "nl-NL", "intent_label": "look_up", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "kijk naar beneden enclosure", "lang": "nl-NL", "intent_label": "look_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "omlaag kijk enclosure", "lang": "nl-NL", "intent_label": "look_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "richt je ogen naar beneden", "lang": "nl-NL", "intent_label": "look_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "kijk omhoog en omlaag animatie enclosure", "lang": "nl-NL", "intent_label": "look_up_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "omlaag omhoog kijk animatie enclosure", "lang": "nl-NL", "intent_label": "look_up_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "richt je ogen omhoog en omlaag", "lang": "nl-NL", "intent_label": "look_up_down", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "kijk naar links en rechts animatie enclosure", "lang": "nl-NL", "intent_label": "look_left_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "kijk van links naar rechts animatie enclosure", "lang": "nl-NL", "intent_label": "look_left_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "links rechts kijk animatie enclosure", "lang": "nl-NL", "intent_label": "look_left_right", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "knipper animatie enclosure", "lang": "nl-NL", "intent_label": "blink", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "doe een knippering enclosure", "lang": "nl-NL", "intent_label": "blink", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "knipper met de oog enclosure", "lang": "nl-NL", "intent_label": "blink", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "draai de oog enclosure", "lang": "nl-NL", "intent_label": "spin", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "laat de oog ronddraaien enclosure", "lang": "nl-NL", "intent_label": "spin", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "draai de oog rond enclosure", "lang": "nl-NL", "intent_label": "spin", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "knijp de oog samen enclosure", "lang": "nl-NL", "intent_label": "narrow_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "maak smalle oog enclosure", "lang": "nl-NL", "intent_label": "narrow_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "vernauw de oog enclosure", "lang": "nl-NL", "intent_label": "narrow_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "reset enclosure", "lang": "nl-NL", "intent_label": "reset", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "enclosure reset", "lang": "nl-NL", "intent_label": "reset", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "zet alles terug naar het begin enclosure", "lang": "nl-NL", "intent_label": "reset", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "glimlach animatie met de mond enclosure", "lang": "nl-NL", "intent_label": "smile", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "doe een glimlach enclosure", "lang": "nl-NL", "intent_label": "smile", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "zet een lachend gezicht op enclosure", "lang": "nl-NL", "intent_label": "smile", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "luister animatie met de mond enclosure", "lang": "nl-NL", "intent_label": "listen", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "begin te luister enclosure", "lang": "nl-NL", "intent_label": "listen", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "activeer de luisteranimatie enclosure", "lang": "nl-NL", "intent_label": "listen", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "denk animatie met de mond enclosure", "lang": "nl-NL", "intent_label": "think", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "begin te denk enclosure", "lang": "nl-NL", "intent_label": "think", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "activeer de denkanimatie enclosure", "lang": "nl-NL", "intent_label": "think", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "maak gekke oog animatie enclosure", "lang": "nl-NL", "intent_label": "crazy_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "zet gekke ogen op enclosure", "lang": "nl-NL", "intent_label": "crazy_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "laat waanzinnige ogen zien animatie enclosure", "lang": "nl-NL", "intent_label": "crazy_eyes", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "stel op een aangepaste oogkleur in", "lang": "nl-NL", "intent_label": "custom_eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "zet aangepaste oogkleur in", "lang": "nl-NL", "intent_label": "custom_eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "verander de oogkleur naar standaard in", "lang": "nl-NL", "intent_label": "eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "verander jouw ogen naar een standaard kleur in", "lang": "nl-NL", "intent_label": "eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "verander oogkleur naar standaard in", "lang": "nl-NL", "intent_label": "eye_color", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "verander de oog helderheid niveau", "lang": "nl-NL", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "verander de oog helderheid niveau naar 20 procent", "lang": "nl-NL", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-mark1-ctrl.openvoiceos", "utterance": "verander naar 20 procent oog helderheid", "lang": "nl-NL", "intent_label": "brightness", "intent_type": "padatious", "needs_manual": false}

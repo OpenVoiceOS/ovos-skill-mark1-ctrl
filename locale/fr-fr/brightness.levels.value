@@ -1,9 +1,0 @@
-# name, pourcent
-# NOTE: Ajouter à vocab/xx-xx/brightness.entity, aussi
-à fond, 100
-lumineux, 75
-moyen, 50
-réduit, 25
-bas, 10
-automatique, -1
-automatique, -1

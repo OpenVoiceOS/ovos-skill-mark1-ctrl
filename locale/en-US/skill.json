@@ -1,0 +1,31 @@
+{
+  "skill_id": "ovos-skill-mark1-ctrl.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl",
+  "name": "Mark 1 Enclosure Control",
+  "description": "Control the Mycroft Mark 1 enclosure by voice.",
+  "examples": [
+    "blink",
+    "set the eye brightness to 50 percent",
+    "make your eyes go crazy",
+    "set a custom eye color",
+    "make your eyes red",
+    "do the listening animation",
+    "look down",
+    "look left",
+    "look left and right",
+    "look right",
+    "look up",
+    "look up and down",
+    "narrow your eyes",
+    "reset your mark 1",
+    "can you smile",
+    "spin your eyes around",
+    "do the thinking animation"
+  ],
+  "tags": [
+    "mark1",
+    "enclosure",
+    "eyes",
+    "system"
+  ]
+}

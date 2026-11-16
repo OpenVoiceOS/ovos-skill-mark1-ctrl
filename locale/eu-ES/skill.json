@@ -1,0 +1,31 @@
+{
+  "skill_id": "ovos-skill-mark1-ctrl.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl",
+  "name": "Mark 1 Enclosure Control",
+  "description": "Control the Mycroft Mark 1 enclosure by voice.",
+  "examples": [
+    "kliskatu begiak",
+    "distira gehitu",
+    "egin begi eroak",
+    "ezarri nahi dudan begi kolorea",
+    "jarri begiak gris",
+    "jarri entzuteko aurpegia",
+    "jaitsi begiak",
+    "begiratu ezkerrera",
+    "begiratu ezkerretik eskuinera",
+    "begiratu eskuinera",
+    "igo begiak",
+    "begiratu goitik behera",
+    "estutu begiak",
+    "utzi dena lehen bezala",
+    "jarri aurpegi alaia",
+    "biratu begiak",
+    "jarri pentsatzeko aurpegia"
+  ],
+  "tags": [
+    "mark1",
+    "enclosure",
+    "eyes",
+    "system"
+  ]
+}
