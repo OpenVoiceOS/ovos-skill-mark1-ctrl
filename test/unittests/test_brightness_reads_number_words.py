@@ -107,6 +107,20 @@ def test_a_fraction_is_no_brightness_level(skill, lang, brightness):
     assert [c.args[0] for c in speak_dialog.call_args_list] == ["brightness_not_found_final"]
 
 
+# "um pouco" and "un poco" mean "a little": the article is no brightness level.
+@pytest.mark.parametrize("lang, brightness", [
+    ("pt-PT", "um pouco"),
+    ("es-ES", "un poco"),
+])
+def test_an_article_is_no_brightness_level(skill, lang, brightness):
+    skill._enclosure = Mock()
+    with patch.object(type(skill), "lang", property(lambda s: lang)), \
+            patch.object(skill, "speak_dialog") as speak_dialog:
+        skill.handle_brightness(Message("test", {"brightness": brightness}, {"lang": lang}))
+    assert not skill._enclosure.eyes_brightness.called
+    assert [c.args[0] for c in speak_dialog.call_args_list] == ["brightness_not_found_final"]
+
+
 # Spoken forms of the percent word: Polish declines "procent" after a
 # numeral, Greek also says "τα εκατό", and French also writes "pourcent".
 @pytest.mark.parametrize("lang, brightness, level", [

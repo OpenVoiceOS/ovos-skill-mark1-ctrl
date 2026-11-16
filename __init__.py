@@ -2,8 +2,7 @@ import random
 import time
 from ast import literal_eval as parse_tuple
 from fractions import Fraction
-from numtag import Kind, tag_numbers
-from numtag.tagger import ARTICLE_CONFIDENCE
+from numtag import Kind, Reason, tag_numbers
 from ovos_color_parser import extract_color_spans, sRGBAColor
 from ovos_utils import create_daemon, classproperty
 from ovos_utils.log import LOG
@@ -410,7 +409,7 @@ class EnclosureControlSkill(OVOSSkill):
         # "half" is a fraction, not a brightness level
         numbers = [m for m in tag_numbers(brightness, self.lang)
                    if m.kind in (Kind.CARDINAL, Kind.DECIMAL)
-                   and m.confidence > ARTICLE_CONFIDENCE]
+                   and Reason.ARTICLE not in m.reasons]
         if not numbers:
             return None
         i = int(Fraction(numbers[0].value))
