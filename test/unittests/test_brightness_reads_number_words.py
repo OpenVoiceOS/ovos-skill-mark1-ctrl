@@ -63,3 +63,45 @@ def test_a_number_word_sets_the_eye_brightness(skill, lang, brightness, level):
 def test_a_plain_level_below_thirty_is_a_level(skill):
     # "twenty" is level 20 of 30: 66 %, which the hardware gets as level 19
     assert eye_levels(skill, "twenty", "en-US") == [19]
+
+
+# A percent word of the locale makes the number a percentage, also below
+# 30, where a bare number is a level. 10 % is level 3, and 20 % is level 6.
+@pytest.mark.parametrize("lang, brightness, level", [
+    ("en-US", "ten per cent", 3),
+    ("ca-ES", "deu per cent", 3), ("ca-ES", "20 per cent", 6),
+    ("da-DK", "ti procent", 3), ("da-DK", "20 procent", 6),
+    ("de-DE", "zehn Prozent", 3), ("de-DE", "20 Prozent", 6),
+    ("el-GR", "δέκα τοις εκατό", 3), ("el-GR", "20 τοις εκατό", 6),
+    ("es-CO", "diez por ciento", 3), ("es-CO", "20 por ciento", 6),
+    ("es-ES", "diez por ciento", 3), ("es-ES", "20 por ciento", 6),
+    ("eu-ES", "hamar ehuneko", 3), ("eu-ES", "ehuneko 20", 6),
+    ("fa-IR", "ده درصد", 3), ("fa-IR", "20 درصد", 6),
+    ("fr-FR", "dix pour cent", 3), ("fr-FR", "20 pour cent", 6),
+    ("gl-ES", "dez por cento", 3), ("gl-ES", "20 por cento", 6),
+    ("it-IT", "dieci per cento", 3), ("it-IT", "20 per cento", 6),
+    ("kab", "20 n umeya", 6),
+    ("nl-NL", "tien procent", 3), ("nl-NL", "20 procent", 6),
+    ("oc-FR", "dètz per cent", 3), ("oc-FR", "20 per cent", 6),
+    ("pl-PL", "dziesięć proc.", 3), ("pl-PL", "20 proc.", 6),
+    ("pt-BR", "dez por cento", 3), ("pt-BR", "20 por cento", 6),
+    ("pt-PT", "dez por cento", 3), ("pt-PT", "20 por cento", 6),
+    ("ru-RU", "десять процентов", 3), ("ru-RU", "20 процентов", 6),
+    ("sv-SE", "tio procent", 3), ("sv-SE", "20 procent", 6),
+])
+def test_a_percent_word_of_the_locale_makes_a_percentage(skill, lang, brightness, level):
+    assert eye_levels(skill, brightness, lang) == [level]
+
+
+@pytest.mark.parametrize("lang, brightness", [
+    ("en-US", "half"),
+    ("pt-PT", "meio"),
+    ("de-DE", "halb"),
+])
+def test_a_fraction_is_no_brightness_level(skill, lang, brightness):
+    skill._enclosure = Mock()
+    with patch.object(type(skill), "lang", property(lambda s: lang)), \
+            patch.object(skill, "speak_dialog") as speak_dialog:
+        skill.handle_brightness(Message("test", {"brightness": brightness}, {"lang": lang}))
+    assert not skill._enclosure.eyes_brightness.called
+    assert [c.args[0] for c in speak_dialog.call_args_list] == ["brightness_not_found_final"]

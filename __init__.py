@@ -412,7 +412,7 @@ class EnclosureControlSkill(OVOSSkill):
         if not numbers:
             return None
         i = int(Fraction(numbers[0].value))
-        if '%' in brightness or 'percent' in brightness:
+        if '%' in brightness or self.voc_match(brightness, 'percent'):
             return i
 
         if i < 0 or i > 100:
