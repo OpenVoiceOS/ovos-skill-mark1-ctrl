@@ -122,12 +122,15 @@ def test_an_article_is_no_brightness_level(skill, lang, brightness):
 
 
 # Spoken forms of the percent word: Polish declines "procent" after a
-# numeral, Greek also says "τα εκατό", and French also writes "pourcent".
+# numeral, Greek also says "τα εκατό", French also writes "pourcent", and
+# Galician also writes "porcento".
 @pytest.mark.parametrize("lang, brightness, level", [
     ("pl-PL", "dziesięć procentów", 3),
     ("pl-PL", "dwadzieścia dwa procenty", 6),
     ("el-GR", "είκοσι τα εκατό", 6),
     ("fr-FR", "dix pourcent", 3),
+    ("gl-ES", "vinte porcento", 6),
+    ("gl-ES", "20 porcento", 6),
 ])
 def test_a_declined_percent_word_makes_a_percentage(skill, lang, brightness, level):
     assert eye_levels(skill, brightness, lang) == [level]
