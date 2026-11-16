@@ -105,3 +105,34 @@ def test_a_fraction_is_no_brightness_level(skill, lang, brightness):
         skill.handle_brightness(Message("test", {"brightness": brightness}, {"lang": lang}))
     assert not skill._enclosure.eyes_brightness.called
     assert [c.args[0] for c in speak_dialog.call_args_list] == ["brightness_not_found_final"]
+
+
+# Spoken forms of the percent word: Polish declines "procent" after a
+# numeral, Greek also says "τα εκατό", and French also writes "pourcent".
+@pytest.mark.parametrize("lang, brightness, level", [
+    ("pl-PL", "dziesięć procentów", 3),
+    ("pl-PL", "dwadzieścia dwa procenty", 6),
+    ("el-GR", "είκοσι τα εκατό", 6),
+    ("fr-FR", "dix pourcent", 3),
+])
+def test_a_declined_percent_word_makes_a_percentage(skill, lang, brightness, level):
+    assert eye_levels(skill, brightness, lang) == [level]
+
+
+# Level 1 and 1 % are both level 0 on the eyes, so read the percentage.
+def test_one_percent_in_the_genitive_is_one_percent(skill):
+    with patch.object(type(skill), "lang", property(lambda s: "pl-PL")):
+        assert skill.parse_brightness("jeden procenta") == 1
+
+
+# A percentage above 100 is out of range, as a plain number above 100 is.
+@pytest.mark.parametrize("lang, brightness", [
+    ("en-US", "200 percent"), ("de-DE", "200 Prozent"), ("pt-PT", "150 %"),
+])
+def test_a_percentage_above_100_is_no_brightness(skill, lang, brightness):
+    skill._enclosure = Mock()
+    with patch.object(type(skill), "lang", property(lambda s: lang)), \
+            patch.object(skill, "speak_dialog") as speak_dialog:
+        skill.handle_brightness(Message("test", {"brightness": brightness}, {"lang": lang}))
+    assert not skill._enclosure.eyes_brightness.called
+    assert [c.args[0] for c in speak_dialog.call_args_list] == ["brightness_not_found_final"]

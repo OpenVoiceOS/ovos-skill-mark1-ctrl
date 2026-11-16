@@ -395,11 +395,13 @@ class EnclosureControlSkill(OVOSSkill):
         """
         return int(float(percent) / float(100) * 30)
 
-    def parse_brightness(self, brightness):
+    def parse_brightness(self, brightness, utterance=""):
         """ parse text for brightness percentage
 
             Args:
                 brightness (str): string containing brightness level
+                utterance (str): the full utterance, which can hold the
+                    percent word that the intent engine left out of the slot
 
             return:
                 (int): brightness as percentage (0-100)
@@ -412,11 +414,12 @@ class EnclosureControlSkill(OVOSSkill):
         if not numbers:
             return None
         i = int(Fraction(numbers[0].value))
-        if '%' in brightness or self.voc_match(brightness, 'percent'):
-            return i
-
         if i < 0 or i > 100:
             return None
+
+        if any('%' in text or self.voc_match(text, 'percent')
+               for text in (brightness, utterance)):
+            return i
 
         if i < 30:
             # Assume plain 0-30 is "level"
@@ -438,9 +441,9 @@ class EnclosureControlSkill(OVOSSkill):
             self.speak_dialog(
                 'brightness_set', data={'val': str(percent) + '%'})
 
-    def _set_brightness(self, brightness):
+    def _set_brightness(self, brightness, utterance=""):
         # brightness can be a number or word like "full", "half"
-        percent = self.parse_brightness(brightness)
+        percent = self.parse_brightness(brightness, utterance)
         if percent is None:
             self.speak_dialog('brightness_not_found_final')
         else:
@@ -456,7 +459,7 @@ class EnclosureControlSkill(OVOSSkill):
         brightness = (message.data.get('brightness', None) or
                       self.get_response('brightness_not_found'))
         if brightness:
-            self._set_brightness(brightness)
+            self._set_brightness(brightness, message.data.get("utterance", ""))
 
     def stop(self):
         if self.playing and self.thread is not None:
