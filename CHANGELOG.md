@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.10.4a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.10.4a1) (2026-11-16)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.10.3a1...0.10.4a1)
+
+**Merged pull requests:**
+
+- fix: read the eye brightness with numtag [\#105](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/105) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.10.3a1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/tree/0.10.3a1) (2026-10-30)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/compare/0.10.2a2...0.10.3a1)
@@ -325,8 +333,6 @@
 **Merged pull requests:**
 
 - Update [\#3](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/3) ([builderjer](https://github.com/builderjer))
-- Update [\#2](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/2) ([builderjer](https://github.com/builderjer))
-- update to make useable again [\#1](https://github.com/OpenVoiceOS/ovos-skill-mark1-ctrl/pull/1) ([builderjer](https://github.com/builderjer))
 
 
 
