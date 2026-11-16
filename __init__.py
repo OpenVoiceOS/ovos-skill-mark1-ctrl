@@ -1,6 +1,8 @@
 import random
 import time
 from ast import literal_eval as parse_tuple
+from fractions import Fraction
+from numtag import Kind, Reason, tag_numbers
 from ovos_color_parser import extract_color_spans, sRGBAColor
 from ovos_utils import create_daemon, classproperty
 from ovos_utils.log import LOG
@@ -392,36 +394,38 @@ class EnclosureControlSkill(OVOSSkill):
         """
         return int(float(percent) / float(100) * 30)
 
-    def parse_brightness(self, brightness):
+    def parse_brightness(self, brightness, utterance=""):
         """ parse text for brightness percentage
 
             Args:
                 brightness (str): string containing brightness level
+                utterance (str): the full utterance, which can hold the
+                    percent word that the intent engine left out of the slot
 
             return:
                 (int): brightness as percentage (0-100)
         """
 
-        try:
-            if '%' in brightness:
-                brightness = brightness.replace("%", "").strip()
-                return int(brightness)
-            if 'percent' in brightness:
-                brightness = brightness.replace("percent", "").strip()
-                return int(brightness)
+        # "half" is a fraction, not a brightness level
+        numbers = [m for m in tag_numbers(brightness, self.lang)
+                   if m.kind in (Kind.CARDINAL, Kind.DECIMAL)
+                   and Reason.ARTICLE not in m.reasons]
+        if not numbers:
+            return None
+        i = int(Fraction(numbers[0].value))
+        if i < 0 or i > 100:
+            return None
 
-            i = int(brightness)
-            if i < 0 or i > 100:
-                return None
-
-            if i < 30:
-                # Assume plain 0-30 is "level"
-                return int((i * 100.0) / 30.0)
-
-            # Assume plain 31-100 is "percentage"
+        if any('%' in text or self.voc_match(text, 'percent')
+               for text in (brightness, utterance)):
             return i
-        except Exception:
-            return None  # failed in an int() conversion
+
+        if i < 30:
+            # Assume plain 0-30 is "level"
+            return int((i * 100.0) / 30.0)
+
+        # Assume plain 31-100 is "percentage"
+        return i
 
     def set_eye_brightness(self, level, speak=True):
         """ Actually change hardware eye brightness
@@ -436,9 +440,9 @@ class EnclosureControlSkill(OVOSSkill):
             self.speak_dialog(
                 'brightness_set', data={'val': str(percent) + '%'})
 
-    def _set_brightness(self, brightness):
+    def _set_brightness(self, brightness, utterance=""):
         # brightness can be a number or word like "full", "half"
-        percent = self.parse_brightness(brightness)
+        percent = self.parse_brightness(brightness, utterance)
         if percent is None:
             self.speak_dialog('brightness_not_found_final')
         else:
@@ -454,7 +458,7 @@ class EnclosureControlSkill(OVOSSkill):
         brightness = (message.data.get('brightness', None) or
                       self.get_response('brightness_not_found'))
         if brightness:
-            self._set_brightness(brightness)
+            self._set_brightness(brightness, message.data.get("utterance", ""))
 
     def stop(self):
         if self.playing and self.thread is not None:
