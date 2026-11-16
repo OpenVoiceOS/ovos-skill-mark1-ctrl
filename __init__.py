@@ -1,6 +1,9 @@
 import random
 import time
 from ast import literal_eval as parse_tuple
+from fractions import Fraction
+from numtag import Kind, tag_numbers
+from numtag.tagger import ARTICLE_CONFIDENCE
 from ovos_color_parser import extract_color_spans, sRGBAColor
 from ovos_utils import create_daemon, classproperty
 from ovos_utils.log import LOG
@@ -402,26 +405,25 @@ class EnclosureControlSkill(OVOSSkill):
                 (int): brightness as percentage (0-100)
         """
 
-        try:
-            if '%' in brightness:
-                brightness = brightness.replace("%", "").strip()
-                return int(brightness)
-            if 'percent' in brightness:
-                brightness = brightness.replace("percent", "").strip()
-                return int(brightness)
-
-            i = int(brightness)
-            if i < 0 or i > 100:
-                return None
-
-            if i < 30:
-                # Assume plain 0-30 is "level"
-                return int((i * 100.0) / 30.0)
-
-            # Assume plain 31-100 is "percentage"
+        # "half" is a fraction, not a brightness level
+        numbers = [m for m in tag_numbers(brightness, self.lang)
+                   if m.kind in (Kind.CARDINAL, Kind.DECIMAL)
+                   and m.confidence > ARTICLE_CONFIDENCE]
+        if not numbers:
+            return None
+        i = int(Fraction(numbers[0].value))
+        if '%' in brightness or 'percent' in brightness:
             return i
-        except Exception:
-            return None  # failed in an int() conversion
+
+        if i < 0 or i > 100:
+            return None
+
+        if i < 30:
+            # Assume plain 0-30 is "level"
+            return int((i * 100.0) / 30.0)
+
+        # Assume plain 31-100 is "percentage"
+        return i
 
     def set_eye_brightness(self, level, speak=True):
         """ Actually change hardware eye brightness
